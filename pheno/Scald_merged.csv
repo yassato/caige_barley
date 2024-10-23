@@ -1,0 +1,679 @@
+"","Trial","Bay","Block","Row","Range","Expt","Name","Damage_Level","Experiment_Number"
+"1","Scald","D",1,73,7,"Control","Commander",7,4
+"2","Scald","D",1,74,7,"CAIGE","5:ZIE14",7,4
+"3","Scald","D",1,75,7,"CAIGE","6:ZIE14",1,4
+"4","Scald","D",1,76,7,"CAIGE","12:ZIE14",1,4
+"5","Scald","D",1,77,7,"CAIGE","14:ZIE14",4,4
+"6","Scald","D",1,78,7,"CAIGE","15:ZIE14",8,4
+"7","Scald","D",1,79,7,"CAIGE","1:ZIC14",5,4
+"8","Scald","D",1,80,7,"CAIGE","2:ZIC14",1,4
+"9","Scald","D",1,81,7,"Control","Keel",7,4
+"10","Scald","D",1,82,7,"CAIGE","3:ZIC14",3,4
+"11","Scald","D",1,83,7,"CAIGE","4:ZIC14",8,4
+"12","Scald","D",1,84,7,"CAIGE","5:ZIC14",7,4
+"13","Scald","D",1,85,7,"CAIGE","6:ZIC14",4,4
+"14","Scald","D",1,86,7,"CAIGE","7:ZIC14",7,4
+"15","Scald","D",1,87,7,"CAIGE","8:ZIC14",4,4
+"16","Scald","D",1,88,7,"CAIGE","9:ZIC14",4,4
+"17","Scald","D",1,89,7,"Control","Schooner",7,4
+"18","Scald","D",1,90,7,"CAIGE","10:ZIC14",4,4
+"19","Scald","D",1,91,7,"CAIGE","11:ZIC14",3,4
+"20","Scald","D",1,92,7,"CAIGE","12:ZIC14",3,4
+"21","Scald","D",1,93,7,"CAIGE","13:ZIC14",1,4
+"22","Scald","D",1,94,7,"CAIGE","14:ZIC14",5,4
+"23","Scald","D",1,95,7,"CAIGE","15:ZIC14",3,4
+"24","Scald","D",1,96,7,"Control","Scope",7,4
+"25","Scald","D",1,73,8,"Control","Hindmarsh",2,4
+"26","Scald","D",1,74,8,"CAIGE","16:ZIC14",8,4
+"27","Scald","D",1,75,8,"CAIGE","17:ZIC14",6,4
+"28","Scald","D",1,76,8,"CAIGE","18:ZIC14",3,4
+"29","Scald","D",1,77,8,"CAIGE","19:ZIC14",1,4
+"30","Scald","D",1,78,8,"CAIGE","20:ZIC14",9,4
+"31","Scald","D",1,79,8,"CAIGE","21:ZIC14",8,4
+"32","Scald","D",1,80,8,"CAIGE","22:ZIC14",7,4
+"33","Scald","D",1,81,8,"Control","Skipper",8,4
+"34","Scald","D",1,82,8,"CAIGE","24:ZIC14",2,4
+"35","Scald","D",1,83,8,"CAIGE","2:ZIB14",8,4
+"36","Scald","D",1,84,8,"CAIGE","3:ZIB14",8,4
+"37","Scald","D",1,85,8,"CAIGE","4:ZIB14",7,4
+"38","Scald","D",1,86,8,"CAIGE","5:ZIB14",8,4
+"39","Scald","D",1,87,8,"CAIGE","6:ZIB14",8,4
+"40","Scald","D",1,88,8,"CAIGE","7:ZIB14",8,4
+"41","Scald","D",1,89,8,"Control","buloke",8,4
+"42","Scald","D",1,90,8,"CAIGE","8:ZIB14",7,4
+"43","Scald","D",1,91,8,"CAIGE","9:ZIB14",8,4
+"44","Scald","D",1,92,8,"CAIGE","10:ZIB14",7,4
+"45","Scald","D",1,93,8,"CAIGE","11:ZIB14",7,4
+"46","Scald","D",1,94,8,"CAIGE","12:ZIB14",8,4
+"47","Scald","D",1,95,8,"CAIGE","13:ZIB14",8,4
+"48","Scald","D",1,96,8,"Control","Yagan",8,4
+"49","Scald","D",1,73,9,"Control","Yagan",8,4
+"50","Scald","D",1,74,9,"CAIGE","14:ZIB14",8,4
+"51","Scald","D",1,75,9,"CAIGE","16:ZIB14",7,4
+"52","Scald","D",1,76,9,"CAIGE","17:ZIB14",7,4
+"53","Scald","D",1,77,9,"CAIGE","18:ZIB14",6,4
+"54","Scald","D",1,78,9,"CAIGE","19:ZIB14",8,4
+"55","Scald","D",1,79,9,"CAIGE","20:ZIB14",8,4
+"56","Scald","D",1,80,9,"CAIGE","21:ZIB14",7,4
+"57","Scald","D",1,81,9,"Control","Hindmarsh",1,4
+"58","Scald","D",1,82,9,"CAIGE","22:ZIB14",6,4
+"59","Scald","D",1,83,9,"CAIGE","23:ZIB14",7,4
+"60","Scald","D",1,84,9,"CAIGE","24:ZIB14",6,4
+"61","Scald","D",1,85,9,"CAIGE","2:ZID14",8,4
+"62","Scald","D",1,86,9,"CAIGE","3:ZID14",8,4
+"63","Scald","D",1,87,9,"CAIGE","4:ZID14",8,4
+"64","Scald","D",1,88,9,"CAIGE","5:ZID14",8,4
+"65","Scald","D",1,89,9,"Control","Navigator",7,4
+"66","Scald","D",1,90,9,"CAIGE","6:ZID14",6,4
+"67","Scald","D",1,91,9,"CAIGE","7:ZID14",8,4
+"68","Scald","D",1,92,9,"CAIGE","8:ZID14",8,4
+"69","Scald","D",1,93,9,"CAIGE","9:ZID14",5,4
+"70","Scald","D",1,94,9,"CAIGE","10:ZID14",8,4
+"71","Scald","D",1,95,9,"CAIGE","11:ZID14",6,4
+"72","Scald","D",1,96,9,"Control","Gairdner",8,4
+"73","Scald","D",1,73,10,"Control","Hindmarsh",1,4
+"74","Scald","D",1,74,10,"CAIGE","12:ZID14",1,4
+"75","Scald","D",1,75,10,"CAIGE","13:ZID14",7,4
+"76","Scald","D",1,76,10,"CAIGE","14:ZID14",7,4
+"77","Scald","D",1,77,10,"CAIGE","15:ZID14",7,4
+"78","Scald","D",1,78,10,"CAIGE","16:ZID14",5,4
+"79","Scald","D",1,79,10,"CAIGE","17:ZID14",7,4
+"80","Scald","D",1,80,10,"CAIGE","18:ZID14",8,4
+"81","Scald","D",1,81,10,"Control","Gairdner",8,4
+"82","Scald","D",1,82,10,"CAIGE","19:ZID14",8,4
+"83","Scald","D",1,83,10,"CAIGE","22:ZID14",8,4
+"84","Scald","D",1,84,10,"CAIGE","23:ZID14",4,4
+"85","Scald","D",1,85,10,"CAIGE","24:ZID14",7,4
+"86","Scald","D",1,86,10,"CAIGE","25:ZID14",8,4
+"87","Scald","D",1,87,10,"CAIGE","26:ZID14",7,4
+"88","Scald","D",1,88,10,"CAIGE","27:ZID14",8,4
+"89","Scald","D",1,89,10,"Control","Compass",8,4
+"90","Scald","D",1,90,10,"CAIGE","28:ZID14",6,4
+"91","Scald","D",1,91,10,"CAIGE","29:ZID14",8,4
+"92","Scald","D",1,92,10,"CAIGE","31:ZID14",8,4
+"93","Scald","D",1,93,10,"CAIGE","32:ZID14",8,4
+"94","Scald","D",1,94,10,"CAIGE","33:ZID14",6,4
+"95","Scald","D",1,95,10,"CAIGE","34:ZID14",6,4
+"96","Scald","D",1,96,10,"Control","LaTrobe",1,4
+"97","Scald","D",1,73,12,"Control","Skipper",7,4
+"98","Scald","D",1,74,12,"CAIGE","35:ZID14",7,4
+"99","Scald","D",1,75,12,"CAIGE","36:ZID14",8,4
+"100","Scald","D",1,76,12,"CAIGE","37:ZID14",7,4
+"101","Scald","D",1,77,12,"CAIGE","38:ZID14",6,4
+"102","Scald","D",1,78,12,"CAIGE","39:ZID14",8,4
+"103","Scald","D",1,79,12,"CAIGE","41:ZID14",7,4
+"104","Scald","D",1,80,12,"CAIGE","42:ZID14",7,4
+"105","Scald","D",1,81,12,"Control","Westminster",7,4
+"106","Scald","D",1,82,12,"CAIGE","43:ZID14",7,4
+"107","Scald","D",1,83,12,"CAIGE","44:ZID14",8,4
+"108","Scald","D",1,84,12,"CAIGE","45:ZID14",8,4
+"109","Scald","D",1,85,12,"CAIGE","46:ZID14",8,4
+"110","Scald","D",1,86,12,"CAIGE","47:ZID14",8,4
+"111","Scald","D",1,87,12,"CAIGE","48:ZID14",8,4
+"112","Scald","D",1,88,12,"CAIGE","49:ZID14",6,4
+"113","Scald","D",1,89,12,"Control","Commander",7,4
+"114","Scald","D",1,90,12,"CAIGE","51:ZID14",8,4
+"115","Scald","D",1,91,12,"CAIGE","52:ZID14",7,4
+"116","Scald","D",1,92,12,"CAIGE","53:ZID14",5,4
+"117","Scald","D",1,93,12,"CAIGE","54:ZID14",7,4
+"118","Scald","D",1,94,12,"CAIGE","55:ZID14",7,4
+"119","Scald","D",1,95,12,"CAIGE","57:ZID14",7,4
+"120","Scald","D",1,96,12,"Control","Gairdner",7,4
+"121","Scald","D",1,73,13,"Control","Hindmarsh",1,4
+"122","Scald","D",1,74,13,"CAIGE","58:ZID14",6,4
+"123","Scald","D",1,75,13,"CAIGE","59:ZID14",7,4
+"124","Scald","D",1,76,13,"CAIGE","61:ZID14",7,4
+"125","Scald","D",1,77,13,"CAIGE","62:ZID14",8,4
+"126","Scald","D",1,78,13,"CAIGE","63:ZID14",7,4
+"127","Scald","D",1,79,13,"CAIGE","64:ZID14",7,4
+"128","Scald","D",1,80,13,"CAIGE","65:ZID14",7,4
+"129","Scald","D",1,81,13,"Control","buloke",8,4
+"130","Scald","D",1,82,13,"CAIGE","66:ZID14",7,4
+"131","Scald","D",1,83,13,"CAIGE","67:ZID14",5,4
+"132","Scald","D",1,84,13,"CAIGE","68:ZID14",4,4
+"133","Scald","D",1,85,13,"CAIGE","69:ZID14",7,4
+"134","Scald","D",1,86,13,"CAIGE","71:ZID14",6,4
+"135","Scald","D",1,87,13,"CAIGE","72:ZID14",8,4
+"136","Scald","D",1,88,13,"CAIGE","73:ZID14",7,4
+"137","Scald","D",1,89,13,"Control","Yagan",8,4
+"138","Scald","D",1,90,13,"CAIGE","74:ZID14",7,4
+"139","Scald","D",1,91,13,"CAIGE","75:ZID14",8,4
+"140","Scald","D",1,92,13,"CAIGE","76:ZID14",8,4
+"141","Scald","D",1,93,13,"CAIGE","77:ZID14",8,4
+"142","Scald","D",1,94,13,"CAIGE","79:ZID14",8,4
+"143","Scald","D",1,95,13,"CAIGE","81:ZID14",7,4
+"144","Scald","D",1,96,13,"Control","Schooner",6,4
+"145","Scald","D",1,73,14,"Control","Gairdner",8,4
+"146","Scald","D",1,74,14,"CAIGE","82:ZID14",8,4
+"147","Scald","D",1,75,14,"CAIGE","83:ZID14",8,4
+"148","Scald","D",1,76,14,"CAIGE","84:ZID14",3,4
+"149","Scald","D",1,77,14,"CAIGE","85:ZID14",8,4
+"150","Scald","D",1,78,14,"CAIGE","86:ZID14",8,4
+"151","Scald","D",1,79,14,"CAIGE","87:ZID14",8,4
+"152","Scald","D",1,80,14,"CAIGE","88:ZID14",8,4
+"153","Scald","D",1,81,14,"Control","Compass",8,4
+"154","Scald","D",1,82,14,"CAIGE","89:ZID14",8,4
+"155","Scald","D",1,83,14,"CAIGE","91:ZID14",7,4
+"156","Scald","D",1,84,14,"CAIGE","92:ZID14",8,4
+"157","Scald","D",1,85,14,"CAIGE","93:ZID14",8,4
+"158","Scald","D",1,86,14,"CAIGE","94:ZID14",8,4
+"159","Scald","D",1,87,14,"CAIGE","95:ZID14",8,4
+"160","Scald","D",1,88,14,"CAIGE","96:ZID14",8,4
+"161","Scald","D",1,89,14,"Control","Yagan",8,4
+"162","Scald","D",1,90,14,"CAIGE","97:ZID14",8,4
+"163","Scald","D",1,91,14,"CAIGE","98:ZID14",7,4
+"164","Scald","D",1,92,14,"CAIGE","99:ZID14",7,4
+"165","Scald","D",1,93,14,"CAIGE","101:ZID14",8,4
+"166","Scald","D",1,94,14,"CAIGE","102:ZID14",7,4
+"167","Scald","D",1,95,14,"CAIGE","103:ZID14",6,4
+"168","Scald","D",1,96,14,"Control","Schooner",7,4
+"169","Scald","D",1,73,15,"Control","Schooner",7,4
+"170","Scald","D",1,74,15,"CAIGE","104:ZID14",7,4
+"171","Scald","D",1,75,15,"CAIGE","105:ZID14",8,4
+"172","Scald","D",1,76,15,"CAIGE","107:ZID14",3,4
+"173","Scald","D",1,77,15,"CAIGE","108:ZID14",4,4
+"174","Scald","D",1,78,15,"CAIGE","109:ZID14",7,4
+"175","Scald","D",1,79,15,"CAIGE","111:ZID14",7,4
+"176","Scald","D",1,80,15,"CAIGE","112:ZID14",7,4
+"177","Scald","D",1,81,15,"Control","Scope",8,4
+"178","Scald","D",1,82,15,"CAIGE","113:ZID14",7,4
+"179","Scald","D",1,83,15,"CAIGE","115:ZID14",7,4
+"180","Scald","D",1,84,15,"CAIGE","116:ZID14",4,4
+"181","Scald","D",1,85,15,"CAIGE","117:ZID14",7,4
+"182","Scald","D",1,86,15,"CAIGE","121:ZID14",6,4
+"183","Scald","D",1,87,15,"CAIGE","122:ZID14",3,4
+"184","Scald","D",1,88,15,"CAIGE","123:ZID14",8,4
+"185","Scald","D",1,89,15,"Control","Baudin",8,4
+"186","Scald","D",1,90,15,"CAIGE","124:ZID14",5,4
+"187","Scald","D",1,91,15,"CAIGE","128:ZID14",8,4
+"188","Scald","D",1,92,15,"CAIGE","129:ZID14",5,4
+"189","Scald","D",1,93,15,"CAIGE","131:ZID14",8,4
+"190","Scald","D",1,94,15,"CAIGE","132:ZID14",8,4
+"191","Scald","D",1,95,15,"CAIGE","133:ZID14",8,4
+"192","Scald","D",1,96,15,"Control","Hindmarsh",1,4
+"193","Scald","D",1,73,16,"Control","Yagan",8,4
+"194","Scald","D",1,74,16,"CAIGE","134:ZID14",8,4
+"195","Scald","D",1,75,16,"CAIGE","135:ZID14",8,4
+"196","Scald","D",1,76,16,"CAIGE","136:ZID14",4,4
+"197","Scald","D",1,77,16,"CAIGE","137:ZID14",6,4
+"198","Scald","D",1,78,16,"CAIGE","138:ZID14",4,4
+"199","Scald","D",1,79,16,"CAIGE","139:ZID14",7,4
+"200","Scald","D",1,80,16,"CAIGE","141:ZID14",8,4
+"201","Scald","D",1,81,16,"Control","LaTrobe",2,4
+"202","Scald","D",1,82,16,"CAIGE","142:ZID14",7,4
+"203","Scald","D",1,83,16,"CAIGE","143:ZID14",6,4
+"204","Scald","D",1,84,16,"CAIGE","144:ZID14",7,4
+"205","Scald","D",1,85,16,"CAIGE","145:ZID14",6,4
+"206","Scald","D",1,86,16,"CAIGE","147:ZID14",2,4
+"207","Scald","D",1,87,16,"CAIGE","148:ZID14",7,4
+"208","Scald","D",1,88,16,"CAIGE","149:ZID14",7,4
+"209","Scald","D",1,89,16,"Control","Hindmarsh",1,4
+"210","Scald","D",1,90,16,"CAIGE","Rihane-03",6,4
+"211","Scald","D",1,91,16,"CAIGE","Parent19",6,4
+"212","Scald","B",1,25,6,"Control","Gairdner",7,8
+"213","Scald","B",1,26,6,"CAIGE 1","1:LAN15",8,8
+"214","Scald","B",1,27,6,"CAIGE 1","3:LAN15",7,8
+"215","Scald","B",1,28,6,"CAIGE 1","4:LAN15",7,8
+"216","Scald","B",1,29,6,"CAIGE 1","6:LAN15",7,8
+"217","Scald","B",1,30,6,"CAIGE 1","7:LAN15",8,8
+"218","Scald","B",1,31,6,"CAIGE 1","8:LAN15",5,8
+"219","Scald","B",1,32,6,"CAIGE 1","10:LAN15",8,8
+"220","Scald","B",1,33,6,"Control","Hindmarsh",7,8
+"221","Scald","B",1,34,6,"CAIGE 1","13:LAN15",7,8
+"222","Scald","B",1,35,6,"CAIGE 1","14:LAN15",8,8
+"223","Scald","B",1,36,6,"CAIGE 1","16:LAN15",7,8
+"224","Scald","B",1,37,6,"CAIGE 1","18:LAN15",6,8
+"225","Scald","B",1,38,6,"CAIGE 1","19:LAN15",9,8
+"226","Scald","B",1,39,6,"CAIGE 1","20:LAN15",8,8
+"227","Scald","B",1,40,6,"CAIGE 1","22:LAN15",4,8
+"228","Scald","B",1,41,6,"Control","Gairdner",8,8
+"229","Scald","B",1,42,6,"CAIGE 1","23:LAN15",5,8
+"230","Scald","B",1,43,6,"CAIGE 1","25:LAN15",8,8
+"231","Scald","B",1,44,6,"CAIGE 1","1:ZBS15",7,8
+"232","Scald","B",1,45,6,"CAIGE 1","3:ZBS15",8,8
+"233","Scald","B",1,46,6,"CAIGE 1","4:ZBS15",3,8
+"234","Scald","B",1,47,6,"CAIGE 1","5:ZBS15",6,8
+"235","Scald","B",1,48,6,"Control","Schooner",6,8
+"236","Scald","B",1,25,7,"Control","Hindmarsh",5,8
+"237","Scald","B",1,26,7,"CAIGE 1","6:ZBS15",7,8
+"238","Scald","B",1,27,7,"CAIGE 1","7:ZBS15",9,8
+"239","Scald","B",1,28,7,"CAIGE 1","8:ZBS15",8,8
+"240","Scald","B",1,29,7,"CAIGE 1","9:ZBS15",8,8
+"241","Scald","B",1,30,7,"CAIGE 1","10:ZBS15",8,8
+"242","Scald","B",1,31,7,"CAIGE 1","11:ZBS15",8,8
+"243","Scald","B",1,32,7,"CAIGE 1","12:ZBS15",8,8
+"244","Scald","B",1,33,7,"Control","Yagan",8,8
+"245","Scald","B",1,34,7,"CAIGE 1","16:ZBS15",8,8
+"246","Scald","B",1,35,7,"CAIGE 1","18:ZBS15",2,8
+"247","Scald","B",1,36,7,"CAIGE 1","20:ZBS15",2,8
+"248","Scald","B",1,37,7,"CAIGE 1","21:ZBS15",3,8
+"249","Scald","B",1,38,7,"CAIGE 1","23:ZBS15",5,8
+"250","Scald","B",1,39,7,"CAIGE 1","24:ZBS15",7,8
+"251","Scald","B",1,40,7,"CAIGE 1","25:ZBS15",2,8
+"252","Scald","B",1,41,7,"Control","Schooner",7,8
+"253","Scald","B",1,42,7,"CAIGE 1","28:ZBS15",3,8
+"254","Scald","B",1,43,7,"CAIGE 1","29:ZBS15",4,8
+"255","Scald","B",1,44,7,"CAIGE 1","31:ZBS15",8,8
+"256","Scald","B",1,45,7,"CAIGE 1","32:ZBS15",8,8
+"257","Scald","B",1,46,7,"CAIGE 1","33:ZBS15",7,8
+"258","Scald","B",1,47,7,"CAIGE 1","34:ZBS15",9,8
+"259","Scald","B",1,48,7,"Control","LaTrobe",8,8
+"260","Scald","B",1,25,8,"Control","Yagan",9,8
+"261","Scald","B",1,26,8,"CAIGE 1","36:ZBS15",9,8
+"262","Scald","B",1,27,8,"CAIGE 1","37:ZBS15",5,8
+"263","Scald","B",1,28,8,"CAIGE 1","38:ZBS15",4,8
+"264","Scald","B",1,29,8,"CAIGE 1","39:ZBS15",5,8
+"265","Scald","B",1,30,8,"CAIGE 1","40:ZBS15",8,8
+"266","Scald","B",1,31,8,"CAIGE 1","42:ZBS15",4,8
+"267","Scald","B",1,32,8,"CAIGE 1","43:ZBS15",3,8
+"268","Scald","B",1,33,8,"Control","Hindmarsh",2,8
+"269","Scald","B",1,34,8,"CAIGE 1","44:ZBS15",3,8
+"270","Scald","B",1,35,8,"CAIGE 1","46:ZBS15",7,8
+"271","Scald","B",1,36,8,"CAIGE 1","47:ZBS15",7,8
+"272","Scald","B",1,37,8,"CAIGE 1","51:ZBS15",7,8
+"273","Scald","B",1,38,8,"CAIGE 1","54:ZBS15",8,8
+"274","Scald","B",1,39,8,"CAIGE 1","55:ZBS15",7,8
+"275","Scald","B",1,40,8,"CAIGE 1","56:ZBS15",6,8
+"276","Scald","B",1,41,8,"Control","Westminster",4,8
+"277","Scald","B",1,42,8,"CAIGE 1","57:ZBS15",7,8
+"278","Scald","B",1,43,8,"CAIGE 1","58:ZBS15",5,8
+"279","Scald","B",1,44,8,"CAIGE 1","59:ZBS15",2,8
+"280","Scald","B",1,45,8,"CAIGE 1","61:ZBS15",3,8
+"281","Scald","B",1,46,8,"CAIGE 1","62:ZBS15",3,8
+"282","Scald","B",1,47,8,"CAIGE 1","63:ZBS15",2,8
+"283","Scald","B",1,48,8,"Control","Compass",7,8
+"284","Scald","B",1,25,9,"Control","Yagan",8,8
+"285","Scald","B",1,26,9,"CAIGE 1","64:ZBS15",3,8
+"286","Scald","B",1,27,9,"CAIGE 1","65:ZBS15",3,8
+"287","Scald","B",1,28,9,"CAIGE 1","66:ZBS15",4,8
+"288","Scald","B",1,29,9,"CAIGE 1","67:ZBS15",2,8
+"289","Scald","B",1,30,9,"CAIGE 1","68:ZBS15",6,8
+"290","Scald","B",1,31,9,"CAIGE 1","69:ZBS15",3,8
+"291","Scald","B",1,32,9,"CAIGE 1","70:ZBS15",7,8
+"292","Scald","B",1,33,9,"Control","Yagan",9,8
+"293","Scald","B",1,34,9,"CAIGE 1","71:ZBS15",5,8
+"294","Scald","B",1,35,9,"CAIGE 1","72:ZBS15",2,8
+"295","Scald","B",1,36,9,"CAIGE 1","74:ZBS15",4,8
+"296","Scald","B",1,37,9,"CAIGE 1","75:ZBS15",8,8
+"297","Scald","B",1,38,9,"CAIGE 1","76:ZBS15",2,8
+"298","Scald","B",1,39,9,"CAIGE 1","79:ZBS15",7,8
+"299","Scald","B",1,40,9,"CAIGE 1","80:ZBS15",6,8
+"300","Scald","B",1,41,9,"Control","Schooner",7,8
+"301","Scald","B",1,42,9,"CAIGE 1","82:ZBS15",6,8
+"302","Scald","B",1,43,9,"CAIGE 1","83:ZBS15",5,8
+"303","Scald","B",1,44,9,"CAIGE 1","84:ZBS15",5,8
+"304","Scald","B",1,45,9,"CAIGE 1","85:ZBS15",6,8
+"305","Scald","B",1,46,9,"CAIGE 1","86:ZBS15",3,8
+"306","Scald","B",1,47,9,"CAIGE 1","87:ZBS15",2,8
+"307","Scald","B",1,48,9,"Control","Buloke",7,8
+"308","Scald","B",1,25,10,"Control","Buloke",8,8
+"309","Scald","B",1,26,10,"CAIGE 1","88:ZBS15",7,8
+"310","Scald","B",1,27,10,"CAIGE 1","89:ZBS15",6,8
+"311","Scald","B",1,28,10,"CAIGE 1","90:ZBS15",8,8
+"312","Scald","B",1,29,10,"CAIGE 1","2:ZIB15",8,8
+"313","Scald","B",1,30,10,"CAIGE 1","3:ZIB15",8,8
+"314","Scald","B",1,31,10,"CAIGE 1","4:ZIB15",7,8
+"315","Scald","B",1,32,10,"CAIGE 1","6:ZIB15",7,8
+"316","Scald","B",1,33,10,"Control","Schooner",8,8
+"317","Scald","B",1,34,10,"CAIGE 1","7:ZIB15",8,8
+"318","Scald","B",1,35,10,"CAIGE 1","8:ZIB15",8,8
+"319","Scald","B",1,36,10,"CAIGE 1","9:ZIB15",8,8
+"320","Scald","B",1,37,10,"CAIGE 1","10:ZIB15",8,8
+"321","Scald","B",1,38,10,"CAIGE 1","11:ZIB15",8,8
+"322","Scald","B",1,39,10,"CAIGE 1","13:ZIB15",7,8
+"323","Scald","B",1,40,10,"CAIGE 1","14:ZIB15",7,8
+"324","Scald","B",1,41,10,"Control","Schooner",7,8
+"325","Scald","B",1,42,10,"CAIGE 1","15:ZIB15",7,8
+"326","Scald","B",1,43,10,"CAIGE 1","16:ZIB15",6,8
+"327","Scald","B",1,44,10,"CAIGE 1","17:ZIB15",4,8
+"328","Scald","B",1,45,10,"CAIGE 1","18:ZIB15",8,8
+"329","Scald","B",1,46,10,"CAIGE 1","19:ZIB15",7,8
+"330","Scald","B",1,47,10,"CAIGE 1","20:ZIB15",8,8
+"331","Scald","B",1,48,10,"Control","LaTrobe",5,8
+"332","Scald","B",1,25,12,"Control","Hindmarsh",5,8
+"333","Scald","B",1,26,12,"CAIGE 1","21:ZIB15",8,8
+"334","Scald","B",1,27,12,"CAIGE 1","22:ZIB15",8,8
+"335","Scald","B",1,28,12,"CAIGE 1","23:ZIB15",7,8
+"336","Scald","B",1,29,12,"CAIGE 1","24:ZIB15",8,8
+"337","Scald","B",1,30,12,"CAIGE 1","1:ZIC15",2,8
+"338","Scald","B",1,31,12,"CAIGE 1","3:ZIC15",2,8
+"339","Scald","B",1,32,12,"CAIGE 1","4:ZIC15",2,8
+"340","Scald","B",1,33,12,"Control","Gairdner",8,8
+"341","Scald","B",1,34,12,"CAIGE 1","5:ZIC15",7,8
+"342","Scald","B",1,35,12,"CAIGE 1","6:ZIC15",2,8
+"343","Scald","B",1,36,12,"CAIGE 1","7:ZIC15",2,8
+"344","Scald","B",1,37,12,"CAIGE 1","8:ZIC15",2,8
+"345","Scald","B",1,38,12,"CAIGE 1","9:ZIC15",6,8
+"346","Scald","B",1,39,12,"CAIGE 1","10:ZIC15",8,8
+"347","Scald","B",1,40,12,"CAIGE 1","12:ZIC15",6,8
+"348","Scald","B",1,41,12,"Control","Yagan",8,8
+"349","Scald","B",1,42,12,"CAIGE 1","13:ZIC15",6,8
+"350","Scald","B",1,43,12,"CAIGE 1","14:ZIC15",5,8
+"351","Scald","B",1,44,12,"CAIGE 1","15:ZIC15",7,8
+"352","Scald","B",1,45,12,"CAIGE 1","16:ZIC15",2,8
+"353","Scald","B",1,46,12,"CAIGE 1","17:ZIC15",2,8
+"354","Scald","B",1,47,12,"CAIGE 1","19:ZIC15",2,8
+"355","Scald","B",1,25,13,"Control","Hindmarsh",2,8
+"356","Scald","B",1,26,13,"CAIGE 1","20:ZIC15",4,8
+"357","Scald","B",1,27,13,"CAIGE 1","21:ZIC15",5,8
+"358","Scald","B",1,28,13,"CAIGE 1","23:ZIC15",7,8
+"359","Scald","B",1,29,13,"CAIGE 1","24:ZIC15",4,8
+"360","Scald","B",1,30,13,"CAIGE 1","125:ZID14",5,8
+"361","Scald","B",1,31,13,"CAIGE 1","1:ZIE14",5,8
+"362","Scald","B",1,32,13,"CAIGE 1","9:ZIE14",4,8
+"363","Scald","B",1,33,13,"Control","Yagan",9,8
+"364","Scald","B",1,34,13,"CAIGE 1","11:ZIE14",3,8
+"365","Scald","B",1,35,13,"CAIGE 1","13:ZIE14",3,8
+"366","Scald","B",1,36,13,"CAIGE 1","18:ZIE14",3,8
+"367","Scald","B",1,37,13,"CAIGE 1","19:ZIE14",2,8
+"368","Scald","B",1,38,13,"CAIGE 1","20:ZIE14",3,8
+"369","Scald","B",1,39,13,"CAIGE 1"," ICARDA003",6,8
+"370","Scald","B",1,40,13,"CAIGE 1"," ICARDA009",8,8
+"371","Scald","B",1,41,13,"Control","Yagan",8,8
+"372","Scald","B",1,42,13,"CAIGE 1"," ICARDA012",8,8
+"373","Scald","B",1,43,13,"CAIGE 1"," ICARDA016",7,8
+"374","Scald","B",1,44,13,"CAIGE 1"," ICARDA023",6,8
+"375","Scald","B",1,45,13,"CAIGE 1"," ICARDA026",7,8
+"376","Scald","B",1,46,13,"CAIGE 1"," ICARDA068",8,8
+"377","Scald","B",1,47,13,"CAIGE 1"," ISBONLRAM-052",7,8
+"378","Scald","B",1,25,14,"Control","Hindmarsh",2,8
+"379","Scald","B",1,26,14,"CAIGE 1"," ISBONLRAM-083",6,8
+"380","Scald","B",1,27,14,"CAIGE 1"," ISBONLRAM-107",8,8
+"381","Scald","B",1,28,14,"CAIGE 1"," ISBYTLRAC-003",7,8
+"382","Scald","B",1,29,14,"CAIGE 1"," ISBYTLRAC-004",7,8
+"383","Scald","B",1,30,14,"CAIGE 1"," ISBYTLRAC-015",8,8
+"384","Scald","B",1,31,14,"CAIGE 1"," ISBYTLRAC-019-24",8,8
+"385","Scald","B",1,32,14,"CAIGE 1"," ISBYTLRAM-004",8,8
+"386","Scald","B",1,33,14,"Control","Hindmarsh",3,8
+"387","Scald","B",1,25,15,"Control","Gairdner",8,8
+"388","Scald","B",1,26,15,"CAIGE 2","2:ZIB14",8,8
+"389","Scald","B",1,27,15,"CAIGE 2","18:ZIB14",6,8
+"390","Scald","B",1,28,15,"CAIGE 2","19:ZIB14",7,8
+"391","Scald","B",1,29,15,"CAIGE 2","23:ZIB14",5,8
+"392","Scald","B",1,30,15,"CAIGE 2","24:ZIB14",7,8
+"393","Scald","B",1,31,15,"CAIGE 2","13:ZIC14",3,8
+"394","Scald","B",1,32,15,"CAIGE 2","18:ZIC14",3,8
+"395","Scald","B",1,33,15,"Control","Gairdner",8,8
+"396","Scald","B",1,34,15,"CAIGE 2","5:ZID14",7,8
+"397","Scald","B",1,35,15,"CAIGE 2","6:ZID14",5,8
+"398","Scald","B",1,36,15,"CAIGE 2","15:ZID14",3,8
+"399","Scald","B",1,37,15,"CAIGE 2","16:ZID14",4,8
+"400","Scald","B",1,38,15,"CAIGE 2","23:ZID14",2,8
+"401","Scald","B",1,39,15,"CAIGE 2","27:ZID14",8,8
+"402","Scald","B",1,40,15,"CAIGE 2","32:ZID14",8,8
+"403","Scald","B",1,41,15,"Control","Yagan",8,8
+"404","Scald","B",1,42,15,"CAIGE 2","35:ZID14",7,8
+"405","Scald","B",1,43,15,"CAIGE 2","44:ZID14",8,8
+"406","Scald","B",1,44,15,"CAIGE 2","45:ZID14",6,8
+"407","Scald","B",1,45,15,"CAIGE 2","49:ZID14",2,8
+"408","Scald","B",1,46,15,"CAIGE 2","52:ZID14",6,8
+"409","Scald","B",1,47,15,"CAIGE 2","54:ZID14",6,8
+"410","Scald","B",1,25,16,"Control","Schooner",6,8
+"411","Scald","B",1,26,16,"CAIGE 2","63:ZID14",5,8
+"412","Scald","B",1,27,16,"CAIGE 2","74:ZID14",7,8
+"413","Scald","B",1,28,16,"CAIGE 2","75:ZID14",8,8
+"414","Scald","B",1,29,16,"CAIGE 2","77:ZID14",8,8
+"415","Scald","B",1,30,16,"CAIGE 2","83:ZID14",8,8
+"416","Scald","B",1,31,16,"CAIGE 2","86:ZID14",8,8
+"417","Scald","B",1,32,16,"CAIGE 2","109:ZID14",8,8
+"418","Scald","B",1,33,16,"Control","Gairdner",8,8
+"419","Scald","B",1,34,16,"CAIGE 2","122:ZID14",5,8
+"420","Scald","B",1,35,16,"CAIGE 2","123:ZID14",7,8
+"421","Scald","B",1,36,16,"CAIGE 2","128:ZID14",8,8
+"422","Scald","B",1,37,16,"CAIGE 2","132:ZID14",7,8
+"423","Scald","B",1,38,16,"CAIGE 2","133:ZID14",8,8
+"424","Scald","B",1,39,16,"CAIGE 2","136:ZID14",5,8
+"425","Scald","B",1,40,16,"CAIGE 2","144:ZID14",6,8
+"426","Scald","B",1,41,16,"Control","Compass",8,8
+"427","Scald","B",1,42,16,"CAIGE 2","148:ZID14",8,8
+"428","Scald","B",1,43,16,"CAIGE 2","149:ZID14",9,8
+"429","Scald '17","A",2,21,25,"CAIGE","32:ZID14",6,12
+"430","Scald '17","A",2,22,25,"CAIGE","5:LAN15",7,12
+"431","Scald '17","A",2,23,25,"CAIGE","9:LAN15",7,12
+"432","Scald '17","A",2,24,25,"Control","Compass",7,12
+"433","Scald '17","A",2,1,26,"Control","Control",6,12
+"434","Scald '17","A",2,2,26,"CAIGE","12:LAN15",6,12
+"435","Scald '17","A",2,3,26,"CAIGE","15:LAN15",8,12
+"436","Scald '17","A",2,4,26,"CAIGE","17:LAN15",6,12
+"437","Scald '17","A",2,5,26,"CAIGE","21:LAN15",8,12
+"438","Scald '17","A",2,6,26,"CAIGE","24:LAN15",6,12
+"439","Scald '17","A",2,7,26,"CAIGE","14:ZBS15",5,12
+"440","Scald '17","A",2,8,26,"CAIGE","15:ZBS15",4,12
+"441","Scald '17","A",2,9,26,"Control","Yagan",7,12
+"442","Scald '17","A",2,10,26,"CAIGE","19:ZBS15",4,12
+"443","Scald '17","A",2,11,26,"CAIGE","22:ZBS15",4,12
+"444","Scald '17","A",2,12,26,"CAIGE","35:ZBS15",4,12
+"445","Scald '17","A",2,13,26,"CAIGE","41:ZBS15",7,12
+"446","Scald '17","A",2,14,26,"CAIGE","45:ZBS15",2,12
+"447","Scald '17","A",2,15,26,"CAIGE","48:ZBS15",3,12
+"448","Scald '17","A",2,16,26,"CAIGE","49:ZBS15",5,12
+"449","Scald '17","A",2,17,26,"Control","Yagan",8,12
+"450","Scald '17","A",2,18,26,"CAIGE","50:ZBS15",2,12
+"451","Scald '17","A",2,19,26,"CAIGE","52:ZBS15",3,12
+"452","Scald '17","A",2,20,26,"CAIGE","53:ZBS15",7,12
+"453","Scald '17","A",2,21,26,"CAIGE","60:ZBS15",7,12
+"454","Scald '17","A",2,22,26,"CAIGE","78:ZBS15",7,12
+"455","Scald '17","A",2,23,26,"CAIGE","81:ZBS15",8,12
+"456","Scald '17","A",2,24,26,"Control","Hindmarsh",5,12
+"457","Scald '17","A",2,1,27,"Control","Yagan",8,12
+"458","Scald '17","A",2,2,27,"CAIGE","12:ZIB15",7,12
+"459","Scald '17","A",2,3,27,"CAIGE","2:ZIC15",3,12
+"460","Scald '17","A",2,4,27,"CAIGE","11:ZIC15",4,12
+"461","Scald '17","A",2,5,27,"CAIGE","18:ZIC15",2,12
+"462","Scald '17","A",2,6,27,"CAIGE","22:ZIC15",3,12
+"463","Scald '17","A",2,7,27,"CAIGE","5:ZBS16",4,12
+"464","Scald '17","A",2,8,27,"CAIGE","7:ZBS16",7,12
+"465","Scald '17","A",2,9,27,"Control","Gairdner",6,12
+"466","Scald '17","A",2,10,27,"CAIGE","8:ZBS16",4,12
+"467","Scald '17","A",2,11,27,"CAIGE","13:ZBS16",8,12
+"468","Scald '17","A",2,12,27,"CAIGE","16:ZBS16",5,12
+"469","Scald '17","A",2,13,27,"CAIGE","18:ZBS16",6,12
+"470","Scald '17","A",2,14,27,"CAIGE","20:ZBS16",8,12
+"471","Scald '17","A",2,15,27,"CAIGE","21:ZBS16",5,12
+"472","Scald '17","A",2,16,27,"CAIGE","23:ZBS16",7,12
+"473","Scald '17","A",2,17,27,"Control","Schooner",6,12
+"474","Scald '17","A",2,19,27,"CAIGE","34:ZBS16",6,12
+"475","Scald '17","A",2,20,27,"CAIGE","37:ZBS16",7,12
+"476","Scald '17","A",2,21,27,"CAIGE","46:ZBS16",8,12
+"477","Scald '17","A",2,23,27,"CAIGE","67:ZBS16",7,12
+"478","Scald '17","A",2,24,27,"Control","Yagan",8,12
+"479","Scald '17","A",2,1,28,"Control","Schooner",6,12
+"480","Scald '17","A",2,2,28,"CAIGE","81:ZBS16",6,12
+"481","Scald '17","A",2,3,28,"CAIGE","85:ZBS16",5,12
+"482","Scald '17","A",2,4,28,"CAIGE","86:ZBS16",5,12
+"483","Scald '17","A",2,5,28,"CAIGE","87:ZBS16",8,12
+"484","Scald '17","A",2,6,28,"CAIGE","88:ZBS16",7,12
+"485","Scald '17","A",2,8,28,"CAIGE","90:ZBS16",8,12
+"486","Scald '17","A",2,9,28,"Control","Westminster",3,12
+"487","Scald '17","A",2,10,28,"CAIGE","91:ZBS16",7,12
+"488","Scald '17","A",2,11,28,"CAIGE","92:ZBS16",7,12
+"489","Scald '17","A",2,12,28,"CAIGE","93:ZBS16",7,12
+"490","Scald '17","A",2,13,28,"CAIGE","94:ZBS16",6,12
+"491","Scald '17","A",2,14,28,"CAIGE","95:ZBS16",5,12
+"492","Scald '17","A",2,15,28,"CAIGE","96:ZBS16",3,12
+"493","Scald '17","A",2,16,28,"CAIGE","97:ZBS16",7,12
+"494","Scald '17","A",2,17,28,"Control","Yagan",8,12
+"495","Scald '17","A",2,18,28,"CAIGE","98:ZBS16",5,12
+"496","Scald '17","A",2,19,28,"CAIGE","99:ZBS16",7,12
+"497","Scald '17","A",2,20,28,"CAIGE","100:ZBS16",6,12
+"498","Scald '17","A",2,21,28,"CAIGE","2:ZBT16",5,12
+"499","Scald '17","A",2,22,28,"CAIGE","3:ZBT16",4,12
+"500","Scald '17","A",2,23,28,"CAIGE","4:ZBT16",4,12
+"501","Scald '17","A",2,24,28,"Control","Yagan",8,12
+"502","Scald '17","A",2,1,29,"Control","Schooner",7,12
+"503","Scald '17","A",2,2,29,"CAIGE","7:ZBT16",6,12
+"504","Scald '17","A",2,3,29,"CAIGE","8:ZBT16",8,12
+"505","Scald '17","A",2,4,29,"CAIGE","9:ZBT16",5,12
+"506","Scald '17","A",2,5,29,"CAIGE","11:ZBT16",7,12
+"507","Scald '17","A",2,6,29,"CAIGE","12:ZBT16",7,12
+"508","Scald '17","A",2,8,29,"CAIGE","18:ZBT16",7,12
+"509","Scald '17","A",2,9,29,"Control","Yagan",8,12
+"510","Scald '17","A",2,10,29,"CAIGE","20:ZBT16",6,12
+"511","Scald '17","A",2,11,29,"CAIGE","21:ZBT16",7,12
+"512","Scald '17","A",2,12,29,"CAIGE","22:ZBT16",6,12
+"513","Scald '17","A",2,13,29,"CAIGE","24:ZBT16",6,12
+"514","Scald '17","A",2,14,29,"CAIGE","28:ZBT16",5,12
+"515","Scald '17","A",2,15,29,"CAIGE","30:ZBT16",6,12
+"516","Scald '17","A",2,16,29,"CAIGE","37:ZBT16",6,12
+"517","Scald '17","A",2,17,29,"Control","Compass",7,12
+"518","Scald '17","A",2,19,29,"CAIGE","41:ZBT16",7,12
+"519","Scald '17","A",2,20,29,"CAIGE","44:ZBT16",7,12
+"520","Scald '17","A",2,21,29,"CAIGE","50:ZBT16",8,12
+"521","Scald '17","A",2,22,29,"CAIGE","52:ZBT16",8,12
+"522","Scald '17","A",2,23,29,"CAIGE","53:ZBT16",7,12
+"523","Scald '17","A",2,24,29,"Control","Planet",6,12
+"524","Scald '17","A",2,1,30,"Control","Compass",6,12
+"525","Scald '17","A",2,2,30,"CAIGE","54:ZBT16",6,12
+"526","Scald '17","A",2,3,30,"CAIGE","58:ZBT16",3,12
+"527","Scald '17","A",2,4,30,"CAIGE","59:ZBT16",4,12
+"528","Scald '17","A",2,5,30,"CAIGE","64:ZBT16",5,12
+"529","Scald '17","A",2,6,30,"CAIGE","65:ZBT16",5,12
+"530","Scald '17","A",2,8,30,"CAIGE","70:ZBT16",5,12
+"531","Scald '17","A",2,9,30,"Control","Yagan",8,12
+"532","Scald '17","A",2,10,30,"CAIGE","71:ZBT16",5,12
+"533","Scald '17","A",2,11,30,"CAIGE","76:ZBT16",7,12
+"534","Scald '17","A",2,12,30,"CAIGE","79:ZBT16",7,12
+"535","Scald '17","A",2,13,30,"CAIGE","83:ZBT16",6,12
+"536","Scald '17","A",2,14,30,"CAIGE","87:ZBT16",6,12
+"537","Scald '17","A",2,15,30,"CAIGE","88:ZBT16",7,12
+"538","Scald '17","A",2,16,30,"CAIGE","92:ZBT16",8,12
+"539","Scald '17","A",2,17,30,"Control","Planet",5,12
+"540","Scald '17","A",2,18,30,"CAIGE","94:ZBT16",6,12
+"541","Scald '17","A",2,19,30,"CAIGE","97:ZBT16",7,12
+"542","Scald '17","A",2,20,30,"CAIGE","98:ZBT16",5,12
+"543","Scald '17","A",2,21,30,"CAIGE","100:ZBT16",7,12
+"544","Scald '17","A",2,22,30,"CAIGE","102:ZBT16",7,12
+"545","Scald '17","A",2,23,30,"CAIGE","103:ZBT16",6,12
+"546","Scald '17","A",2,24,30,"Control","Gairdner",7,12
+"547","Scald '17","A",2,2,32,"CAIGE","108:ZBT16",7,12
+"548","Scald '17","A",2,3,32,"CAIGE","110:ZBT16",5,12
+"549","Scald '17","A",2,4,32,"CAIGE","116:ZBT16",8,12
+"550","Scald '17","A",2,5,32,"CAIGE","119:ZBT16",6,12
+"551","Scald '17","A",2,6,32,"CAIGE","124:ZBT16",5,12
+"552","Scald '17","A",2,7,32,"CAIGE","125:ZBT16",7,12
+"553","Scald '17","A",2,9,32,"Control","Compass",6,12
+"554","Scald '17","A",2,10,32,"CAIGE","129:ZBT16",6,12
+"555","Scald '17","A",2,11,32,"CAIGE","132:ZBT16",5,12
+"556","Scald '17","A",2,12,32,"CAIGE","135:ZBT16",6,12
+"557","Scald '17","A",2,13,32,"CAIGE","136:ZBT16",6,12
+"558","Scald '17","A",2,14,32,"CAIGE","142:ZBT16",7,12
+"559","Scald '17","A",2,15,32,"CAIGE","145:ZBT16",5,12
+"560","Scald '17","A",2,16,32,"CAIGE","148:ZBT16",4,12
+"561","Scald '17","A",2,17,32,"Control","Control",7,12
+"562","Scald '17","A",2,18,32,"CAIGE","150:ZBT16",5,12
+"563","Scald '17","A",2,19,32,"CAIGE","152:ZBT16",4,12
+"564","Scald '17","A",2,20,32,"CAIGE","153:ZBT16",4,12
+"565","Scald '17","A",2,21,32,"CAIGE","155:ZBT16",3,12
+"566","Scald '17","A",2,22,32,"CAIGE","157:ZBT16",2,12
+"567","Scald '17","A",2,23,32,"CAIGE","158:ZBT16",7,12
+"568","Scald '17","A",2,1,33,"Control","Planet",4,12
+"569","Scald '17","A",2,2,33,"CAIGE","163:ZBT16",5,12
+"570","Scald '17","A",2,3,33,"CAIGE","169:ZBT16",5,12
+"571","Scald '17","A",2,4,33,"CAIGE","175:ZBT16",5,12
+"572","Scald '17","A",2,5,33,"CAIGE","177:ZBT16",5,12
+"573","Scald '17","A",2,6,33,"CAIGE","179:ZBT16",6,12
+"574","Scald '17","A",2,7,33,"CAIGE","180:ZBT16",5,12
+"575","Scald '17","A",2,8,33,"CAIGE","182:ZBT16",6,12
+"576","Scald '17","A",2,9,33,"Control","Yagan",8,12
+"577","Scald '17","A",2,10,33,"CAIGE","183:ZBT16",5,12
+"578","Scald '17","A",2,11,33,"CAIGE","188:ZBT16",6,12
+"579","Scald '17","A",2,12,33,"CAIGE","191:ZBT16",4,12
+"580","Scald '17","A",2,13,33,"CAIGE","196:ZBT16",4,12
+"581","Scald '17","A",2,14,33,"CAIGE","208:ZBT16",5,12
+"582","Scald '17","A",2,15,33,"CAIGE","210:ZBT16",5,12
+"583","Scald '17","A",2,16,33,"CAIGE","211:ZBT16",6,12
+"584","Scald '17","A",2,17,33,"Control","Planet",4,12
+"585","Scald '17","A",2,18,33,"CAIGE","214:ZBT16",6,12
+"586","Scald '17","A",2,19,33,"CAIGE","220:ZBT16",4,12
+"587","Scald '17","A",2,20,33,"CAIGE","221:ZBT16",5,12
+"588","Scald '17","A",2,21,33,"CAIGE","223:ZBT16",6,12
+"589","Scald '17","A",2,22,33,"CAIGE","226:ZBT16",4,12
+"590","Scald '17","A",2,23,33,"CAIGE","229:ZBT16",4,12
+"591","Scald '17","A",2,1,34,"Control","Yagan",7,12
+"592","Scald '17","A",2,2,34,"CAIGE","231:ZBT16",3,12
+"593","Scald '17","A",2,3,34,"CAIGE","1:ZIB16",8,12
+"594","Scald '17","A",2,4,34,"CAIGE","2:ZIB16",6,12
+"595","Scald '17","A",2,5,34,"CAIGE","3:ZIB16",8,12
+"596","Scald '17","A",2,6,34,"CAIGE","5:ZIB16",6,12
+"597","Scald '17","A",2,8,34,"CAIGE","7:ZIB16",6,12
+"598","Scald '17","A",2,9,34,"Control","Control",7,12
+"599","Scald '17","A",2,10,34,"CAIGE","8:ZIB16",6,12
+"600","Scald '17","A",2,11,34,"CAIGE","9:ZIB16",6,12
+"601","Scald '17","A",2,12,34,"CAIGE","10:ZIB16",5,12
+"602","Scald '17","A",2,13,34,"CAIGE","12:ZIB16",5,12
+"603","Scald '17","A",2,14,34,"CAIGE","13:ZIB16",8,12
+"604","Scald '17","A",2,15,34,"CAIGE","14:ZIB16",5,12
+"605","Scald '17","A",2,16,34,"CAIGE","15:ZIB16",7,12
+"606","Scald '17","A",2,17,34,"Control","Yagan",7,12
+"607","Scald '17","A",2,18,34,"CAIGE","16:ZIB16",3,12
+"608","Scald '17","A",2,19,34,"CAIGE","17:ZIB16",7,12
+"609","Scald '17","A",2,20,34,"CAIGE","18:ZIB16",8,12
+"610","Scald '17","A",2,21,34,"CAIGE","19:ZIB16",6,12
+"611","Scald '17","A",2,22,34,"CAIGE","20:ZIB16",6,12
+"612","Scald '17","A",2,23,34,"CAIGE","1:ZIC16",3,12
+"613","Scald '17","A",2,24,34,"Control","Hindmarsh",2,12
+"614","Scald '17","A",2,1,35,"Control","Planet",5,12
+"615","Scald '17","A",2,2,35,"CAIGE","2:ZIC16",6,12
+"616","Scald '17","A",2,3,35,"CAIGE","3:ZIC16",3,12
+"617","Scald '17","A",2,4,35,"CAIGE","4:ZIC16",2,12
+"618","Scald '17","A",2,5,35,"CAIGE","5:ZIC16",2,12
+"619","Scald '17","A",2,6,35,"CAIGE","6:ZIC16",2,12
+"620","Scald '17","A",2,8,35,"CAIGE","8:ZIC16",5,12
+"621","Scald '17","A",2,9,35,"Control","Planet",4,12
+"622","Scald '17","A",2,10,35,"CAIGE","9:ZIC16",6,12
+"623","Scald '17","A",2,11,35,"CAIGE","10:ZIC16",6,12
+"624","Scald '17","A",2,12,35,"CAIGE","11:ZIC16",5,12
+"625","Scald '17","A",2,13,35,"CAIGE","12:ZIC16",5,12
+"626","Scald '17","A",2,14,35,"CAIGE","13:ZIC16",4,12
+"627","Scald '17","A",2,15,35,"CAIGE","15:ZIC16",4,12
+"628","Scald '17","A",2,16,35,"CAIGE","16:ZIC16",5,12
+"629","Scald '17","A",2,17,35,"Control","Compass",7,12
+"630","Scald '17","A",2,18,35,"CAIGE","17:ZIC16",3,12
+"631","Scald '17","A",2,19,35,"CAIGE","21:ZIC16",5,12
+"632","Scald '17","A",2,20,35,"CAIGE","22:ZIC16",4,12
+"633","Scald '17","A",2,21,35,"CAIGE","1:LAN16",6,12
+"634","Scald '17","A",2,22,35,"CAIGE","2:LAN16",4,12
+"635","Scald '17","A",2,23,35,"CAIGE","3:LAN16",3,12
+"636","Scald '17","A",2,24,35,"Control","Westminster",3,12
+"637","Scald '17","A",2,1,36,"Control","Gairdner",8,12
+"638","Scald '17","A",2,2,36,"CAIGE","4:LAN16",6,12
+"639","Scald '17","A",2,3,36,"CAIGE","5:LAN16",7,12
+"640","Scald '17","A",2,6,36,"CAIGE","8:LAN16",4,12
+"641","Scald '17","A",2,9,36,"Control","Yagan",8,12
+"642","Scald '17","A",2,10,36,"CAIGE","11:LAN16",6,12
+"643","Scald '17","A",2,11,36,"CAIGE","12:LAN16",6,12
+"644","Scald '17","A",2,12,36,"CAIGE","13:LAN16",5,12
+"645","Scald '17","A",2,13,36,"CAIGE","14:LAN16",5,12
+"646","Scald '17","A",2,14,36,"CAIGE","15:LAN16",2,12
+"647","Scald '17","A",2,15,36,"CAIGE","16:LAN16",6,12
+"648","Scald '17","A",2,16,36,"CAIGE","17:LAN16",7,12
+"649","Scald '17","A",2,17,36,"Control","Planet",6,12
+"650","Scald '17","A",2,18,36,"CAIGE","18:LAN16",8,12
+"651","Scald '17","A",2,19,36,"CAIGE","19:LAN16",4,12
+"652","Scald '17","A",2,20,36,"CAIGE","20:LAN16",6,12
+"653","Scald '17","A",2,21,36,"CAIGE","21:LAN16",3,12
+"654","Scald '17","A",2,22,36,"CAIGE","22:LAN16",2,12
+"655","Scald '17","A",2,23,36,"CAIGE","23:LAN16",2,12
+"656","Scald '17","A",2,24,36,"Control","Compass",7,12
+"657","Scald '17","A",2,1,37,"Control","Westminster",3,12
+"658","Scald '17","A",2,2,37,"CAIGE","24:LAN16",2,12
+"659","Scald '17","A",2,3,37,"CAIGE","25:LAN16",4,12
+"660","Scald '17","A",2,4,37,"CAIGE","26:LAN16",8,12
+"661","Scald '17","A",2,5,37,"CAIGE","27:LAN16",4,12
+"662","Scald '17","A",2,6,37,"CAIGE","28:LAN16",6,12
+"663","Scald '17","A",2,8,37,"CAIGE","30:LAN16",6,12
+"664","Scald '17","A",2,9,37,"Control","Schooner",6,12
+"665","Scald '17","A",2,10,37,"CAIGE","31:LAN16",6,12
+"666","Scald '17","A",2,11,37,"CAIGE","32:LAN16",5,12
+"667","Scald '17","A",2,12,37,"CAIGE","33:LAN16",7,12
+"668","Scald '17","A",2,14,37,"CAIGE","35:LAN16",6,12
+"669","Scald '17","A",2,15,37,"CAIGE","36:LAN16",7,12
+"670","Scald '17","A",2,16,37,"CAIGE","37:LAN16",8,12
+"671","Scald '17","A",2,17,37,"Control","Schooner",7,12
+"672","Scald '17","A",2,18,37,"CAIGE","38:LAN16",6,12
+"673","Scald '17","A",2,19,37,"CAIGE","39:LAN16",6,12
+"674","Scald '17","A",2,20,37,"CAIGE","40:LAN16",8,12
+"675","Scald '17","A",2,21,37,"CAIGE","41:LAN16",8,12
+"676","Scald '17","A",2,22,37,"CAIGE","42:LAN16",8,12
+"677","Scald '17","A",2,23,37,"CAIGE","43:LAN16",8,12
+"678","Scald '17","A",2,24,37,"Control","Westminster",3,12
