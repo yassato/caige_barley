@@ -82,7 +82,7 @@ type = c(rep("self",length(out$PVEself)),rep("neighbor",length(out$PVEnei)))
 res1 = data.frame(dist,PVE,type)
 bar1 = ggplot(data=res1,aes(x=dist,y=PVE,fill=type)) + geom_bar(stat="identity") + theme_classic() + 
   ylab("PVE") + xlab("Euclidian distance from focal plants") + 
-  ylim(NA,1) + theme(legend.position=c(0.8,0.9)) + labs(subtitle="Net form net blotch")
+  ylim(NA,1) + theme(legend.position=c(0.8,0.9)) #+ labs(subtitle="Net form net blotch")
   
 out = read.csv("./output/PVE_SFNB_MAF1.csv")
 chi2 = qchisq(1-out$p_val,1)
@@ -94,7 +94,7 @@ type = c(rep("self",length(out$PVEself)),rep("neighbor",length(out$PVEnei)))
 res2 = data.frame(dist,PVE,type)
 bar2 = ggplot(data=res2,aes(x=dist,y=PVE,fill=type)) + geom_bar(stat="identity") + theme_classic() + 
   ylab("PVE") + xlab("Euclidian distance from focal plants") + 
-  ylim(NA,1) + theme(legend.position="none") + labs(subtitle="Spot form net blotch")
+  ylim(NA,1) + theme(legend.position="none") #+ labs(subtitle="Spot form net blotch")
 
 out = read.csv("./output/PVE_Scald_MAF1.csv")
 chi2 = qchisq(1-out$p_val,1)
@@ -106,9 +106,9 @@ type = c(rep("self",length(out$PVEself)),rep("neighbor",length(out$PVEnei)))
 res3 = data.frame(dist,PVE,type)
 bar3 = ggplot(data=res3,aes(x=dist,y=PVE,fill=type)) + geom_bar(stat="identity") + theme_classic() + 
   ylab("PVE") + xlab("Euclidian distance from focal plants") + 
-  ylim(NA,1) + theme(legend.position="none") + labs(subtitle="Scald")
+  ylim(NA,1) + theme(legend.position="none") #+ labs(subtitle="Scald")
 
-bar = (bar1 | bar2 | bar3) + plot_annotation(tag_levels = "A")
+bar = (bar1 | bar2 | bar3) #+ plot_annotation(tag_levels = "A")
 ggsave(bar,filename="./figures/PVE_all.pdf",height=3,width=10)
 
 

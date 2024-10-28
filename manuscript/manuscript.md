@@ -113,39 +113,72 @@ The standard GWAS was performed using Neighbor GWAS, which internally uses the g
 # Results
 
 ## Spatial heterogeneity of disease infection
-We used SpATS to quantify spatial variation in the three phenotypes of disease infection --- namely, net form net blotch, spot form net blotch, and scald --- in barley.
+We used SpATS to quantify spatial variation in the three disease phenotypes --- namely, net form net blotch, spot form net blotch, and scald --- in barley.
 
 - describe results
 
-These results showed that a substantial spatial heterogeneity of disease infection was unexplained by plants' own genotypes and thus remained a room to be explained by neighboring genotypes.
+These results showed that a substantial spatial heterogeneity of disease infection was unexplained by plants' own genotypes and thus left a room to be explained by neighboring genotypes.
 
 
 ## Phenotypic variation explained by neighbor genotypes
 Subsequently, we asked to what extent the spatial heterogeneity could be explained by neighbor genotypic effects. 
 To address this question, we calculated phenotypic variation explained by neighbor genotype identity using the Neighbor GWAS model (eq. x). 
-
-- describe the results.
-
+All the three phenotypes of disease infection had a significant SNP heritability regarding plant's own genotypic effects (blue bars in Fig. 3A-C; likelihood ratio test, $\chi^2_1$ > xx, $p$ < 0.05 see Table S2 for exact test-statistics and $p$-values).
+More remarkably, we found significant contributions of neighbor genotypes to all the three phenotypes (red bars in Fig. 3A-C; likelihood ratio test, $\chi^2_1$ > xx, $p$ < 0.05 see Table S2 for exact test-statistics and $p$-values).
+Specifically, _describe the results of each phenotype one-by-one_.
 The similar patterns were found even when the cut-off value of MAF was changed to 0.05 (Table SX).
 These PVE analyses showed that a significant fraction of spatial heterogeneity of net blotch susceptibility was attributable to neighbor genotypic identity, which led us to further ask whether this significant variation could be explained by major-effect loci. 
 
 
 ## Genome-wide association study
 Lastly, we used Neighbor GWAS to detect large-effect loci responsible for neighbor genotypic effects on the three phenotypes of disease infection.
-We detected x significant SNPs associated with neighbor genotypic effects, two of which were for net blotch and one was for yy. 
+We detected two significant SNPs associated with neighbor genotypic effects, one of which were for net form net blotch and another was for scald (Fig. 4B, C, D). 
+The significant SNP of neighbor genotypic effects on the net form net blotch was located on the tip of 7H chromosome (Fig. 4B)
 These findings suggest that xxx.  
 
-To examine whether QTLs responsible for neighbor effects coincided with those for own genetic effects, we compared the results of standard GWAS and neighbor GWAS. A standard GWAS was performed using a subset of Eq.1 without xx terms.  
-QTL position of NFNB in comparison with self-QTL  
-QTL position of SFNB in comparison with self-QTL   
-QTL position of Scald in comparison with self-QTL
-These results suggest that plant' own and neighbor genotypic effects on disease infection differ in their genetic mechanisms.  
+To examine whether neighbor genotypic effects shared the same genetic architecture with plant's own genotypic effects, we also conducted standard GWAS and compared it with Neighbor GWAS.
+
+
+- QTL position of NFNB in comparison with self-QTL  
+- QTL position of SFNB in comparison with self-QTL   
+- QTL position of Scald in comparison with self-QTL  
+
+These results suggest that plant' own and neighbor genotypic effects on disease infection may have different genetic bases.  
 
 # Discussion
-- Major findings
-- Significance: GWAS possible
-- Other studies: Indirect genetic effects
-- Perspective: 
+Our quantitative genetic analyses revealed that significant fractions of spatial heterogeneity was attributable to neighbor genotypes in barley diseases.
+Similarly, studies on indirect genetic effects reported the influence of neighboring genotypes on the other individuals' phenotypes in _Arabidopsis_ [@montazeaud_indirect_2023], _Eucalyptus_ [@costa_e_silva_genetic-based_2017], and xxx.
+While these previous studies also quantified the phenotypic variation attributable to neighboring genotypes, genetic variants has yet to be identified.
+In this context, our Neighbor GWAS analysis detected a significant SNP associated with neighbor genotypic effects on the net blotch damage.
+This is the first example for Neighbor GWAS to detect a significant QTL and, to our knowledge, one of few reports of significant QTLs responsible for neighbor genotypic effects [@montazeaud_cultivar_2022].  
+
+## Process of disease spread
+
+The influence of neighboring genotypes on another plant's infection could occur through dispersal from one plot to another.
+Although our quantitative genetic analysis was unable to elucidate molecular mechanisms, effective spatial scales and a significant variant deserve to be discussed.
+
+- spatial scales by PVE
+
+Furthermore, we detected a significant QTL that had negative effects of allelic mixture on damage, indicating the risk of allelic mixture to spread diseases between different genotypes.  
+
+- Discussions on each fungal pathogen
+
+## Applicability and limitation
+To infer neighboring genotype-genotype interactions, our analysis showed the effective use of open data collected from a randomized block design of many plant genotypes.  
+
+For meta-analytic approach, we should note also that open data may not be always complete.
+For instance, x, y and z.
+To address these issues, pattern-based analyses, such as P-splines in SpATS, can be used as a complementary tool to determine the upper limit of spatial heterogeneity in observed phenotypes.  
+
+## Conclusion 
+Harnessing open data, we found significant phenotypic variation and genetic variant associated with neighbor genotypic effects on disease infection in barley.
+Neighbor genotypic effects are linked to genotype mixtures [@sato_reducing_2024], providing one of promissing ways for integrated pest management [@tooker_genotypically_2012].
+Unlike a previous study on polygenic traits [@sato_reducing_2024], the identification of significant QTLs may enable us to optimize population-level pest damage with a few loci focused [@wuest_ecological_2021; @sato_genetics_2024].
+Beyond genotype mixture, allelic mixture is particularly suitable for crop varieties because intraspecific varieties can be subjected to breeding by crossing each other [@montazeaud_cultivar_2022].
+Further studies are needed to validate these effects by comparing allelic monoculture and mixture at the candidate locus.  
+
+
+
 
 # Author contributions
 IA: investigation, formal analysis, funding acquisition, writing; KKS: supervision, funding acquisition, writing; RSI: supervision, funding acquisition, writing; YS: conceptualization, investigation, formal analysis, supervision, funding acquisition, writing
@@ -160,10 +193,10 @@ The authors appreciate all efforts made by the data collectors of the CAIGE proj
 
 - Figure 2. SpATS for visualization of spatial heterogeneity
 
-![Figure 3. Proportion of phenotypic variation explained (PVE) by plant's own (self) and neighbor (neighbor) genotypic effects on on disease infections in barley cultivars. PVE at the distance of zero corresponds to a coventional SNP heritability (blue). Additional fractions explained by neighbor genotypic identity (red) indicate a net contribution of neighbor genotypic effects  and are shown across the distances $\neq$ 0. Statistical significance (i.e., exact $p$-value) of each fraction is shown in Table S2.](../figures/PVE_all.pdf) 
+![Figure 3. Proportion of phenotypic variation explained (PVE) by plant's own (self) and neighbor (neighbor) genotypic effects on on the three phenotypes of disease infections: (A) net form net blotch, (B) spot form net blotch, and (C) scald. PVE at the distance of zero corresponds to a coventional SNP heritability (blue). Additional fractions explained by neighbor genotypic identity (red) indicate a net contribution of neighbor genotypic effects  and are shown across the distances $\neq$ 0. Asterisks indicate \* $p<0.05$; \** $p<0.01$ with likelihood ratio test (see Table S2 for exact $p$-values).](../figures/PVE_fig.pdf) 
 
 
-![Figure 4. GWAS Manhattan plots for plant's own or neighbor genotypic effects on disease infections in barley cultivars. Left (A, C, and E) and right (B, D, and F) panels display plant's own (self) or neighbor (neighbor) genotypic effects, respectively. Target phenotypes are the net form net blotch (A-B), spot form net blotch (C-D), and scald (E-F). Solid and dashed holizontal lines indicate genome-wide Bonferroni threshold at $p<0.05$ with MAF cut-off values at 0.01 and 0.05, respectively.](../figures/barleyMan.pdf)
+![Figure 4. GWAS Manhattan plots for plant's own or neighbor genotypic effects on the three phenotypes of disease infections in barley cultivars. Left (A, C, and E) and right (B, D, and F) panels display plant's own (self) or neighbor (neighbor) genotypic effects, respectively. Target phenotypes are the net form net blotch (A-B), spot form net blotch (C-D), and scald (E-F). Solid and dashed holizontal lines indicate genome-wide Bonferroni threshold at $p<0.05$ with MAF cut-off values at 0.01 and 0.05, respectively.](../figures/barleyMan.pdf)
 
 
 # Tables
@@ -181,6 +214,8 @@ $\dagger$Shown are the number after individuals whose genotype are unavailable (
 # Supplementary Materials
 
 - Figure S1. Spatial arrangements of plant genotypes   
+
+![Figure S2. Quantile-Quantile (QQ) plots of plant's own or neighbor genotypic effects on the three phenotypes of disease infections in barley cultivars. Upper (A, B, and C) and lower (D, E, and F) panels display plant's own (self) or neighbor (neighbor) genotypic effects, respectively. Target phenotypes are the net form net blotch (A-D), spot form net blotch (C-E), and scald (C-F). Observed -log~10~($p$) association scores are plotted against those of expected values. Dashed lines indicate random expectation as $y = x$.](../figures/barleyQQ.pdf)
 
 - Table S1. Exact links to the study data within the CAIGE website
 
