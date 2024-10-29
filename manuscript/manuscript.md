@@ -62,52 +62,57 @@ Using P-spline, this method quantifies a fraction of phenotypic variation attrib
 SpATS also quantified broad-sense heritability explained by plant's own genotypic effects.
 
 Describe:
-
 - response variable  
-- genotypes  
 - covariates  
-- 
 
-For this line of analyses, we used the SpATS package [@rodriguez-alvarez_correcting_2018] implemented in R version x.x.x (R Core Team 2024).  
+For this line of spatial genetic analyses, we used the SpATS package [@rodriguez-alvarez_correcting_2018] implemented in R version x.x.x (R Core Team 2024).  
 
 ## Neighbor GWAS
 
 ### Model description
 
 We used the Neighbor GWAS method [@sato_neighbor_2021] to quantify (i) the proportion of phenotypic variation explained (PVE) by neighbor genotypic effects and (ii) perform GWAS of neighbor genotypic effects on disease symptoms.
-In short, Neighbor GWAS consists of a two-factor linear mixed model that incorporates locus-wise identity (or similarity vice versa) of neighboring individuals in addition to plants' own genotypes as follows:
+In short, Neighbor GWAS consists of a two-factor linear mixed model that incorporates locus-wise identity (or similarity vice versa) of neighboring genotypes in addition to plants' own genotypes as follows:
 
-$$y_i = \beta_0 + \beta_1x_i + \frac{\beta_2}{J}\sum_{j=1}^J{(x_ix_j)} + u_i + e_i$$
+$$y_i = \beta_0 + \beta_1x_i + \frac{\beta_2}{J}\sum_{j=1}^J{(x_ix_j)} + u_i + e_i~~~~~\text{Eq. 1}$$
 
 where $y_i$ is a phenotype of $i$-th individual; $\beta_0$ is an intercept; $\beta_1$ is a fixed effect from plant's own genotype at a focal locus $x_i$; $\beta_2$ is a fixed effect from genotypes of neighboring individuals $x_j$ at the same locus ($j$ up to the number of neighboring individuals $J$); $u_i$ is a random effect; and $e_i$ is a residual.
+For the two fixed effects $\beta_1$ and $\beta_2$, plant's own genotypic values $x_i$ are converted as -1, 0, and +1 for one homozygote, heterozygote, and another homozygote.
+Accordingly, the mean allelic identity between the focal and neighboring plants $\sum_{j=1}^J{(x_ix_j)}/J$ takes from -1 (dissimilar) to +1 (similar), in which the sign of $\beta_2$ corresponded to negative or positive effects of allelic identity on a focal plant's phenotype $y_i$.
+Therefore, statistical tests of $\beta_2$ and its estimates enable GWAS with the inference for the positive or negative allelic interactions among neighboring plants.
+For the random effects $u_i$, two variance-covariance matrices related to plant's own and neighboring genotypes are considered as
 
-- ...to be filled out.
+$$u_i \sim \text{Norm}(0, \sigma^2_1\boldsymbol{K_1} + \sigma^2_2\boldsymbol{K_2})~~~~~\text{Eq. 2}$$
 
-Variation partitioning can be performed by estimating two variance components (see "Phenotypic variation explained by neighbor genotypes" below) while GWAS can be performed by testing the fixed effect $\beta_2$ (see "Genome-wide association study" below). 
-Details are described in @sato_neighbor_2021. 
+where a tilde means 'distributed as'. The two variance component parameters $\sigma^2_1$ and $\sigma^2_2$ respectively represents polygenic effects of plant's own and neighboring genotypes on a phenotype $y_i$, in which $\boldsymbol{K_1}$ is a kinship matrix and $\boldsymbol{K_2}$ represents neighbor genotypic similarity across a field (see Appendix S1).
+The rest unexplained variation, i.e., residual, follows a normal distribution as $e_i \sim \text{Norm}(0, \sigma^2_e\boldsymbol{I})$. 
+Net phenotypic variation explained (PVE) by neighboring genotypes can be quantified as PVE = $[(\sigma^2_1 + \sigma^2_2)/(\sigma^2_1 + \sigma^2_2 + \sigma^2_e)] - h^2$, where $h^2$ is a SNP heritability quantified by a standard GWAS model.
+In summary, variation partitioning can be performed by estimating two variance components $\sigma^2_1$ and $\sigma^2_2$ (see "Phenotypic variation explained by neighbor genotypes" below) while GWAS can be performed by testing the fixed effect $\beta_2$ (see "Genome-wide association study" below). 
+All the relevant methods of Neighbor GWAS are implemented as the rNeighbor GWAS package v1.2.4 (<https://doi.org/10.32614/CRAN.package.rNeighborGWAS>), which depends on the gaston package [@Rgaston] and uses its lmm.aireml and lmm.diago functions to solve mixed models and perform GWAS, respectively.
+Theoretical details are described in @sato_neighbor_2021.  
 
 
 ### Phenotypic variation explained by neighbor genotypes
 
 To examine how largely spatial variation can be explained by neighboring genotypes, we used the Neighbor GWAS package to quantify variance components in Eq. X. 
 We examined two cut-off thresholds of minor allele frequency (MAF) at 5% or 1%. 
-The former is a standard criterion in plant GWAS (e.g., ) while the latter includes relatively rare variants, leaving xx and yy SNPs, respectively (Table 1).
-
-- response variable  
-- genotypes  
-- covariates  
-
-Regarding the spatial range to be referred, we analyzed up to xxx nearest neighbors in a field.  
-This is because, when spatial range is too broad, xx and yy have a severe co-linearity [@sato_neighbor_2021; @sato_reducing_2024].  
-Likelihood ratio tests were performed for x and y from simpler to complex models following @sato_reducing_2024.
+The former is a standard criterion in plant GWAS (e.g., ) while the latter includes relatively rare variants [e.g., @xu_genome-wide_2023], leaving approx. 20,578 and 14,568 SNPs, respectively (Table 1).
+The damage severity score (from 0 to **X**) of three disease symptoms were separately analyzed as a target phenotype: net form net blotch, spot form net blotch, and scald.
+The end-point damage score was used as a representative phenotype for each year.
+The difference of the three study years (2015, 2016, and 2017) was considered non-genetic covariates.
+Regarding the spatial range to be referred, we analyzed up to **xxx** nearest neighbors in a field, which corresponds up to 4.2 Euclidian distance from focal plants.
+This is because, when spatial range is too broad, plant's own genotypic value $x_i$ and neighbor genotypic values $\sum_{j=1}^J{(x_ix_j)/J}$ have a severe co-linearity [@sato_neighbor_2021; @sato_reducing_2024].  
+To address such a co-linearity, likelihood ratio tests were performed for x and y from simpler to complex models following @sato_reducing_2024.  
 
 
 ### Genome-wide association study (GWAS)
 
-To identify QTLs responsible for neighbor genotypic effects on disease infection, we performed GWAS of the neighbor effect coefficient $\beta_2$ and depicted Manhattan plots.   
-
-To test whether QTLs overlapped between plant's own and neighbor genotypic effects, we also performed standard GWAS, which was a subset of the Neighbor GWAS model (Eq. x).
-The standard GWAS was performed using Neighbor GWAS, which internally uses the gaston package [@Rgaston].  
+To identify QTLs responsible for neighbor genotypic effects on disease infection, we performed GWAS of the neighbor effect coefficient $\beta_2$ and depicted Manhattan plots.
+The target phenotype and non-genetic covariates were the same as the PVE analysis above.
+Each SNP was tested after diagonalization on a weighted kinship matrix $\boldsymbol{K'} = \hat{\sigma}^2_1\boldsymbol{K_1} + \hat{\sigma}^2_2\boldsymbol{K_2}$ [see @sato_neighbor_2021 for details].
+GWAS was repeated up to the spatial distance at 4.2 and separately performed for the three phenotypes, namely net form net blotch, spot form net blotch, and scald.
+To test whether QTLs overlapped between plant's own and neighbor genotypic effects, we also performed standard GWAS, which was a subset of the Neighbor GWAS model (Eq. 1 and 2) when $\beta_2$ and $\sigma^2_2$ were set at 0.
+The standard GWAS was also performed using Neighbor GWAS, which internally uses the gaston package of R [@Rgaston].
 
 
 # Results
@@ -125,7 +130,7 @@ Subsequently, we asked to what extent the spatial heterogeneity could be explain
 To address this question, we calculated phenotypic variation explained by neighbor genotype identity using the Neighbor GWAS model (eq. x). 
 All the three phenotypes of disease infection had a significant SNP heritability regarding plant's own genotypic effects (blue bars in Fig. 3A-C; likelihood ratio test, $\chi^2_1$ > xx, $p$ < 0.05 see Table S2 for exact test-statistics and $p$-values).
 More remarkably, we found significant contributions of neighbor genotypes to all the three phenotypes (red bars in Fig. 3A-C; likelihood ratio test, $\chi^2_1$ > xx, $p$ < 0.05 see Table S2 for exact test-statistics and $p$-values).
-Specifically, _describe the results of each phenotype one-by-one_.
+Specifically, **describe the results of each phenotype one-by-one**.
 The similar patterns were found even when the cut-off value of MAF was changed to 0.05 (Table SX).
 These PVE analyses showed that a significant fraction of spatial heterogeneity of net blotch susceptibility was attributable to neighbor genotypic identity, which led us to further ask whether this significant variation could be explained by major-effect loci. 
 
@@ -157,28 +162,35 @@ This is the first example for Neighbor GWAS to detect a significant QTL and, to 
 The influence of neighboring genotypes on another plant's infection could occur through dispersal from one plot to another.
 Although our quantitative genetic analysis was unable to elucidate molecular mechanisms, effective spatial scales and a significant variant deserve to be discussed.
 
-- spatial scales by PVE
+- spatial scales of PVE in comparison with SpATS patterns
 
 Furthermore, we detected a significant QTL that had negative effects of allelic mixture on damage, indicating the risk of allelic mixture to spread diseases between different genotypes.  
 
-- Discussions on each fungal pathogen
+
+The influence of neighboring genotypes depends not only on plant genetics but also on pathogen life histories, with respect to generation time and dispersal mode.
+
+- discussion on the generation time and dispersal model of NFNB, SFNB, and Scald
+
 
 ## Applicability and limitation
-To infer neighboring genotype-genotype interactions, our analysis showed the effective use of open data collected from a randomized block design of many plant genotypes.  
-
-For meta-analytic approach, we should note also that open data may not be always complete.
-For instance, x, y and z.
-To address these issues, pattern-based analyses, such as P-splines in SpATS, can be used as a complementary tool to determine the upper limit of spatial heterogeneity in observed phenotypes.  
+In order to infer neighboring genotype-genotype interactions, our analysis showed the effective use of open data collected from a randomized block design of many plant genotypes.
+As the randomized block design is often employed to conduct GWAS [e.g., @sato_reducing_2024], there should be other available data on various plant species.
+In this context, Neighbor GWAS does not require manipulative experiments and thus widens the opportunity to study the genetic architecture of plant-plant interactions using open data [@sato_genetics_2024].
+Meanwhile, we should note that open data may not be always complete.
+For instance, detailed metadata, such physical distance between individual plots or plants, were not found in the barley open data.
+This shortage of basic information could have made the interpretation of Neighbor GWAS difficult.
+To solve this issue, pattern-based analyses, such as P-splines in SpATS, was used as a complementary tool to determine the upper limit of spatial heterogeneity in observed phenotypes.
+A joint use of pattern-based and process-based modeling would be effective for overcoming potential limitations regarding data availability.  
 
 ## Conclusion 
 Harnessing open data, we found significant phenotypic variation and genetic variant associated with neighbor genotypic effects on disease infection in barley.
-Neighbor genotypic effects are linked to genotype mixtures [@sato_reducing_2024], providing one of promissing ways for integrated pest management [@tooker_genotypically_2012].
+Neighbor genotypic effects are linked to genotype mixtures [@sato_reducing_2024], providing one of promising ways for integrated pest management [@tooker_genotypically_2012].
 Unlike a previous study on polygenic traits [@sato_reducing_2024], the identification of significant QTLs may enable us to optimize population-level pest damage with a few loci focused [@wuest_ecological_2021; @sato_genetics_2024].
 Beyond genotype mixture, allelic mixture is particularly suitable for crop varieties because intraspecific varieties can be subjected to breeding by crossing each other [@montazeaud_cultivar_2022].
 Further studies are needed to validate these effects by comparing allelic monoculture and mixture at the candidate locus.  
 
-
-
+# Data availability
+All the source code and input data are available at GitHub (<https://github.com/yassato/caige_barley>) and Zenodo (<https://doi.org/xxxxxx>).  
 
 # Author contributions
 IA: investigation, formal analysis, funding acquisition, writing; KKS: supervision, funding acquisition, writing; RSI: supervision, funding acquisition, writing; YS: conceptualization, investigation, formal analysis, supervision, funding acquisition, writing
