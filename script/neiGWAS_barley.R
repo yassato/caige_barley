@@ -87,6 +87,7 @@ saveRDS(gwas,"./output/Scald_GWAS.rds")
 
 # incl. cov by sommer
 library(sommer)
+scale = 4
 g_nei <- nei_coval(geno=geno, smap=smap, scale=scale, grouping=pheno$Experiment_Number)
 q <- ncol(geno)
 K_self <- tcrossprod(geno)
@@ -96,12 +97,12 @@ K_self <- as.matrix(Matrix::nearPD(K_self, maxit = 10^6)$mat)
 K_nei <- as.matrix(Matrix::nearPD(K_nei, maxit = 10^6)$mat)
 
 modIGE1 <- mmec(Damage_Level ~ factor(Experiment_Number), dateWarning = FALSE,
-                random = ~ K_self + K_nei, verbose = TRUE,
-                rcov = ~ units, nIters=100, data = pheno)
+                random = ~ K_self + K_nei, verbose = FALSE,
+                rcov = ~ units, nIters = 50, data = pheno)
 
 modIGE2 <- mmec(Damage_Level ~ factor(Experiment_Number), dateWarning = FALSE,
                 random = ~ covc(vsc(isc(K_self)), vsc(isc(K_nei))),
-                rcov = ~ units, nIters=100, verbose = TRUE, data = pheno)
+                rcov = ~ units, nIters = 50, verbose = FALSE, data = pheno)
 
 summary(modIGE1)
 summary(modIGE2)
