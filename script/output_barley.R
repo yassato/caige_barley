@@ -6,7 +6,7 @@ source("./script/coord.R")
 # manhattan plot with line, QQ-plot
 
 # load GWAS results
-trait = "SFNB"
+trait = "NFNB"
 prfx = paste0(trait,"_GWAS")
 dir = "./output/"
 dirfn = paste0(dir,prfx,".rds")
@@ -27,7 +27,7 @@ th_maf1 = nrow(gwas[[k]])
 
 th_maf5 = nrow(filter(gwas[[1]], MAF>0.05))
 
-out = gwas[[3]]
+out = gwas[[6]]
 chr_rep = table(out$CHROM)
 cols = rep(rep(c(grey(0.5,0.5),"black"),times=length(chr_rep)/2),times=chr_rep)
 x = coord(out$CHROM,out$POS)

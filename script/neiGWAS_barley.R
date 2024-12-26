@@ -2,7 +2,7 @@ library(rNeighborGWAS)
 library(tidyverse)
 
 # load phenotype data
-pheno = read.csv("./pheno/NFNB_merged.csv")
+pheno = read.csv("./pheno/Scald_merged.csv")
 pheno$Experiment_Number = as.factor(pheno$Experiment_Number)
 print(nrow(pheno))
 
@@ -52,7 +52,15 @@ gmap = data.frame(gmap,MAF)
 
 # choose effect distance
 distances = c(1,sqrt(2)+0.01,2,sqrt(8)+0.01,3,4,sqrt(18)+0.01) 
-covar = model.matrix(~Experiment_Number,data=pheno)[,-1]
+covar = model.matrix(~Experiment_Number+poly(Row,4)+poly(Range,4),data=pheno)[,-1]
+# covar = as.data.frame(covar)
+# covar$Row2 = covar$Row^2
+# covar$Row3 = covar$Row^3
+# covar$Row4 = covar$Row^4
+# covar$Range2 = covar$Range^2
+# covar$Range3 = covar$Range^3
+# covar$Range4 = covar$Range^4
+# covar = as.matrix(covar)
 res = calc_PVEnei(geno=geno,pheno=pheno$Damage_Level,smap=smap,scale_seq=distances,addcovar=covar,grouping=pheno$Experiment_Number,response="quantitative")
 total = res$PVEself+res$PVEnei
 res = data.frame(res,total)
@@ -76,7 +84,7 @@ for(i in distances) {
   g_nei <- nei_coval(geno=geno, smap=smap, scale=scale, grouping=pheno$Experiment_Number)
   
   #neiGWAS
-  covar <- model.matrix(~Experiment_Number,data=pheno)[,-1]
+  # covar <- model.matrix(~Experiment_Number,data=pheno)[,-1]
   gwas_out <- nei_lmm(geno=geno, g_nei=g_nei, pheno=pheno$Damage_Level,addcovar=covar)
   out <- cbind(gmap,gwas_out)
   gwas = c(gwas,list(out))
@@ -96,13 +104,13 @@ K_nei <- tcrossprod(g_nei)/(q - 1)
 K_self <- as.matrix(Matrix::nearPD(K_self, maxit = 10^6)$mat)
 K_nei <- as.matrix(Matrix::nearPD(K_nei, maxit = 10^6)$mat)
 
-modIGE1 <- mmec(Damage_Level ~ factor(Experiment_Number), dateWarning = FALSE,
-                random = ~ K_self + K_nei, verbose = FALSE,
+modIGE1 <- mmec(Damage_Level ~ factor(Experiment_Number)+poly(Row,4)+poly(Range,4), dateWarning = FALSE,
+                random = ~ K_self + K_nei, verbose = TRUE,
                 rcov = ~ units, nIters = 50, data = pheno)
 
-modIGE2 <- mmec(Damage_Level ~ factor(Experiment_Number), dateWarning = FALSE,
+modIGE2 <- mmec(Damage_Level ~ factor(Experiment_Number)+poly(Row,4)+poly(Range,4), dateWarning = FALSE,
                 random = ~ covc(vsc(isc(K_self)), vsc(isc(K_nei))),
-                rcov = ~ units, nIters = 50, verbose = FALSE, data = pheno)
+                rcov = ~ units, nIters = 50, verbose = TRUE, data = pheno)
 
 summary(modIGE1)
 summary(modIGE2)
