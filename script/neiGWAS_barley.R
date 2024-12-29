@@ -2,7 +2,7 @@ library(rNeighborGWAS)
 library(tidyverse)
 
 # load phenotype data
-pheno = read.csv("./pheno/Scald_merged.csv")
+pheno = read.csv("./pheno/SFNB_merged.csv")
 pheno$Experiment_Number = as.factor(pheno$Experiment_Number)
 print(nrow(pheno))
 
@@ -67,6 +67,7 @@ res = data.frame(res,total)
 
 delta_PVE(res)
 
+
 #pooled experiment GWAS:
 #NFNB (1,6,10): distance best at 2, delta_PVE chose 1
 #sig SNP in chr5 at 2, also high at 2.3
@@ -91,7 +92,7 @@ for(i in distances) {
 }
 
 # save results
-saveRDS(gwas,"./output/Scald_GWAS.rds")
+saveRDS(gwas,"./output/SFNB_GWAS.rds")
 
 # incl. cov by sommer
 library(sommer)
@@ -103,6 +104,12 @@ K_self <- ((q - 1)/2 + K_self/2)/(q - 1)
 K_nei <- tcrossprod(g_nei)/(q - 1)
 K_self <- as.matrix(Matrix::nearPD(K_self, maxit = 10^6)$mat)
 K_nei <- as.matrix(Matrix::nearPD(K_nei, maxit = 10^6)$mat)
+
+# near positive-definite for combined K
+# K2 = rbind(cbind(K_self,K_self*K_nei),cbind(K_self*K_nei,K_nei))
+# K2 = as.matrix(Matrix::nearPD(K2, maxit = 10^6)$mat)
+# K_self = K2[1:nrow(K_self),1:ncol(K_self)]
+# K_nei = K2[(nrow(K_self)+1):(nrow(K_self)+nrow(K_nei)),(ncol(K_self)+1):(ncol(K_self)+ncol(K_nei))]
 
 modIGE1 <- mmec(Damage_Level ~ factor(Experiment_Number)+poly(Row,4)+poly(Range,4), dateWarning = FALSE,
                 random = ~ K_self + K_nei, verbose = TRUE,
