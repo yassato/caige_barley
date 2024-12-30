@@ -2,7 +2,7 @@ library(rNeighborGWAS)
 library(tidyverse)
 
 # load phenotype data
-pheno = read.csv("./pheno/SFNB_merged.csv")
+pheno = read.csv("./pheno/Scald_merged.csv")
 pheno$Experiment_Number = as.factor(pheno$Experiment_Number)
 print(nrow(pheno))
 
@@ -92,7 +92,7 @@ for(i in distances) {
 }
 
 # save results
-saveRDS(gwas,"./output/SFNB_GWAS.rds")
+saveRDS(gwas,"./output/Scald_GWAS.rds")
 
 # incl. cov by sommer
 library(sommer)

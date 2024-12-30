@@ -1,5 +1,5 @@
 ---
-title: Spatial heterogeneity of disease infection attributable to neighbor genotypic identity in barley
+title: Spatial heterogeneity of disease infection attributable to neighbor genotypic identity in barley cultivars
 output:
   word_document: default
   pdf_document: default
@@ -8,26 +8,27 @@ bibliography: zotero.bib
 csl: g3.csl
 ---
 
-**Iqra Akram**^1^, **[Kentaro K. Shimizu?]**^2^, **Rie Shimizu-Inatsugi**^2^, \& **Yasuhiro Sato**^2,3†\*^    
+**Iqra Akram**^1^, **[Kentaro K. Shimizu?]**^2,3^, **Rie Shimizu-Inatsugi**^2^, \& **Yasuhiro Sato**^2,4†\*^    
 
-^1^Graduate School of Environmental Science, Hokkaido University, Kita-ku N10W5, Sapporo 060-0810, Hokkaido, Japan  
+^1^Graduate School of Environmental Science, Hokkaido University, N10W5 Kita-ku, Sapporo 060-0810, Hokkaido, Japan  
 ^2^Department of Evolutionary Biology and Environmental Studies, University of Zurich
 Winterthurerstrasse 190, 8057 Zurich, Switzerland  
-^3^Faculty of Environmental Earth Science, Hokkaido University, Kita-ku N10W5, Sapporo 060-0810, Hokkaido, Japan  
+^3^Kihara Institute for Biological Research, Yokohama City University, Maioka 641-12, Totsuka-ward, Yokohama 244-0813, Japan  
+^4^Faculty of Environmental Earth Science, Hokkaido University, N10W5 Kita-ku, Sapporo 060-0810, Hokkaido, Japan  
 ^\*^Corresponding author: yassato@ees.hokudai.ac.jp  
 ORCID: 0000-0002-6466-723X (Y.S.)
   
 
 # Abstract
 Pest damage exhibits considerable spatial heterogeneity among individual plants in field environments. 
-However, little is known about biotic factors and loci responsible for such spatial heterogeneity. 
-Using barley data, here we investigated whether neighboring genotypes explained spatial heterogeneity of disease symptoms.
-To quantify spatial variation and perform genome-wide association study (GWAS) of disease phenotypes, we applied two methods, SpATS and Neighbor GWAS, for the disease trial data curated from the CAIGE project. 
-The SpATS analysis showed that xx-yy% and XX-YY% of phenotypic variation in net blotch and scald symptoms was explained respectively by plant's own and neighbor genotypes, thereby leading us to apply Neighbor GWAS for further variance component analysis and association mapping. 
-The variance component analysis showed that xx-yy% variation was explained by neighbor genotypic identity for the net form net blotch, spot form net blotch and scald symptoms. 
-Furthermore, our GWAS detected a significant SNP that was located on the barley 7H chromosome of barley and associated with neighbor genotypic effects on the net form net blotch.
-Overall, these results suggest that neighbor genotypes are an overlooked but significant source of the spatial heterogeneity in pest damage to field crops.  
-
+While such spatial heterogeneity was often treated as an environmental nuisance in quantitative genetics, underlying biotic factors and loci gain remain unexplored.
+To quantify disease spatial variation and associate it with neighbor genotypes, we applied applied two methods, Spatial Analysis of Field Trials with Splines (SpATS) and Neighbor Genome-Wide Association Study (Neighbor GWAS), to barley cultivars.
+Having compiled the CIMMYT Australia ICARDA Germplasm Evaluation (CAIGE) data, we first applied SpATS to three disease phenotypes such as the net form net blotch, spot form net blotch and scald damage scores.
+This SpATS analysis showed that XX-YY% of total phenotypic variation in net blotch and scald symptoms was attributable to spatial processes along the rows and ranges of barley fields, thereby leading us to consider these spatial positions into further variance component analysis and GWAS. 
+We then applied the Neighbor GWAS model to further variance component analysis and found that 10-30% variation of the three disease phenotypes was significantly explained by neighbor genotypic identity. 
+The Neighbor GWAS method further detected a relatively rare but significant variant that was located on the barley 7H chromosome and associated with neighbor genotypic influence on the net form net blotch.
+This variant was estimated to have negative effects of the allelic similarity on disease damage, indicating that allelic mixtures at this locus could be avoided to prevent the spread of net form net blotch.
+These findings suggest that neighbor genotype identity may be understudied but potentially important sources of spatial heterogeneity in pest damage to field crops.  
 
 
 # Introduction
