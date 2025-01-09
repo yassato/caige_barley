@@ -8,13 +8,12 @@ bibliography: zotero.bib
 csl: g3.csl
 ---
 
-**Iqra Akram**^1^, **[Kentaro K. Shimizu?]**^2,3^, **Rie Shimizu-Inatsugi**^2^, \& **Yasuhiro Sato**^2,4†\*^    
+**Iqra Akram**^1^, **Rie Shimizu-Inatsugi**^2^, \& **Yasuhiro Sato**^1,3\*^    
 
 ^1^Graduate School of Environmental Science, Hokkaido University, N10W5 Kita-ku, Sapporo 060-0810, Hokkaido, Japan  
 ^2^Department of Evolutionary Biology and Environmental Studies, University of Zurich
 Winterthurerstrasse 190, 8057 Zurich, Switzerland  
-^3^Kihara Institute for Biological Research, Yokohama City University, Maioka 641-12, Totsuka-ward, Yokohama 244-0813, Japan  
-^4^Faculty of Environmental Earth Science, Hokkaido University, N10W5 Kita-ku, Sapporo 060-0810, Hokkaido, Japan  
+^3^Faculty of Environmental Earth Science, Hokkaido University, N10W5 Kita-ku, Sapporo 060-0810, Hokkaido, Japan  
 ^\*^Corresponding author: yassato@ees.hokudai.ac.jp  
 ORCID: 0000-0002-6466-723X (Y.S.)
   
@@ -23,25 +22,23 @@ ORCID: 0000-0002-6466-723X (Y.S.)
 Pest damage exhibits considerable spatial heterogeneity among individual plants in field environments. 
 While such spatial heterogeneity was often treated as an environmental nuisance in quantitative genetics, underlying biotic factors and loci gain remain unexplored.
 To quantify disease spatial variation and associate it with neighbor genotypes, we applied applied two methods, Spatial Analysis of Field Trials with Splines (SpATS) and Neighbor Genome-Wide Association Study (Neighbor GWAS), to barley cultivars.
-Having compiled the CIMMYT Australia ICARDA Germplasm Evaluation (CAIGE) data, we first applied SpATS to three disease phenotypes such as the net form net blotch, spot form net blotch and scald damage scores.
+Having compiled the CIMMYT Australia ICARDA Germplasm Evaluation (CAIGE) data, we first applied SpATS to damages by three diseases such as the net form net blotch, spot form net blotch, and scald.
 This SpATS analysis showed that XX-YY% of total phenotypic variation in net blotch and scald symptoms was attributable to spatial processes along the rows and ranges of barley fields, thereby leading us to consider these spatial positions into further variance component analysis and GWAS. 
 We then applied the Neighbor GWAS model to further variance component analysis and found that 10-30% variation of the three disease phenotypes was significantly explained by neighbor genotypic identity. 
 The Neighbor GWAS method further detected a relatively rare but significant variant that was located on the barley 7H chromosome and associated with neighbor genotypic influence on the net form net blotch.
-This variant was estimated to have negative effects of the allelic similarity on disease damage, indicating that allelic mixtures at this locus could be avoided to prevent the spread of net form net blotch.
+This variant was estimated to have negative effects of the allelic similarity on disease damage, indicating that allelic mixtures at this locus could be avoided to prevent the spread of net form net blotch [**-> describe the result and its inference based on the sign of beta2 of the significant SNP**].
 These findings suggest that neighbor genotype identity may be understudied but potentially important sources of spatial heterogeneity in pest damage to field crops.  
 
 
 # Introduction
 
-Natural and field-grown plants exhibit considerable spatial variation in their phenotypes, which is shaped by abiotic and biotic factors. Pest damage, such as pathogen infection [@rieux_long-distance_2014] and insect herbivory [@the_herbivory_variability_network__plant_2023], is especially heterogeneous among individual plants in space.
-While spatial heterogeneity has been considered a nuisance in plant breeding and quantitative genetics [@rodriguez-alvarez_correcting_2018], it could be explained by biotic interactions.
-For example, neighbor genotypes are one of biotic factors that can shape spatial heterogeneity of pest damage. Plant-plant interactions in basic biology. Interplot interference in agricultural practice. 
+**general intro:** Natural and field-grown plants exhibit considerable spatial variation in their phenotypes, which is shaped by abiotic and biotic factors. Pest damage, such as pathogen infection [@rieux_long-distance_2014] and insect herbivory [@the_herbivory_variability_network__plant_2023], is especially heterogeneous among individual plants in space. While spatial heterogeneity has been considered a nuisance in plant breeding and quantitative genetics [@rodriguez-alvarez_correcting_2018], it could be explained by biotic interactions. For example, neighbor genotypes are one of biotic factors that can shape spatial heterogeneity of pest damage. **Mention plant-plant interactions in basic biology.** **Mention Interplot interference in agricultural practice.**  
 
-Disease infection represents a trait that exhibits considerable spatial variation in important field crops. For instance, barley is infected by many fungal diseases such as xxx, yyy, zzz. These fungal diseases develop in xxx days and spread out spores across a field (xx and yy). When resistant and susceptible cultivars are grown in a proximity, patterns of spore spreading and resultant infection could be spatially heterogeneous due to neighboring genotypes as well as stochastic dispersal. While spatial patterns are well studied [@rieux_long-distance_2014; @rodriguez-alvarez_correcting_2018], much less is known about the relevance of neighboring genotypes to spatial variation in crop disease infection.
+**barley disease and its spatial variation:** Disease infection represents a trait that exhibits considerable spatial variation in important field crops. For instance, barley is infected by many fungal diseases such as net blotch and scald. These fungal diseases develop in **xx-yy** days and spread out spores across a field (**citations**). When resistant and susceptible cultivars are grown in a proximity, patterns of spore spreading and resultant infection could create a spatially heterogeneity due to neighboring genotypes as well as stochastic dispersal. While spatial patterns have often been analyzed in field trials [@rieux_long-distance_2014; @rodriguez-alvarez_correcting_2018], much less is known about the relevance of neighboring genotypes to spatial variation in crop disease infection.
 
-To analyze the effects of neighboring genotypes on individual traits, we have recently developed a new method of GWAS, called "Neighbor GWAS"" [@sato_neighbor_2021]. Neighbor GWAS employs xxx. However, there are other factors xxx.
+**Neighbor GWAS method:** To analyze the effects of neighboring genotypes on individual traits, we have recently developed a new method of GWAS, called "Neighbor GWAS" [@sato_neighbor_2021]. **Describe the points of Neighbor GWAS and what it can do**.
 
-In this study, we investigated spatial heterogeneity of disease infection, such as net blotch and scaled, in barley. Specifically, we aimed to address the following questions: (i) Was the significant fraction of disease infection explained by any spatial process? (ii) To what extent was the spatial variation explained by neighboring genotypic identity? (iii) Were there any significant QTL responsible for the neighbor genotypic effects on disease infection? To address these questions, we applied two methods of quantitative genetics, SpATS and Neighbor GWAS, for publicly available data deposited by the CAIGE project in Australia.
+**What was done in this study:** In this study, we investigated spatial heterogeneity of disease infection, such as net blotch and scaled, in barley. Specifically, we aimed to address the following questions: (i) Was the significant fraction of disease infection explained by any spatial process? (ii) To what extent was the spatial variation explained by neighboring genotypic identity? (iii) Were there any significant QTL responsible for the neighbor genotypic effects on disease infection? To address these questions, we applied two methods of quantitative genetics, SpATS and Neighbor GWAS, for publicly available data deposited by the CAIGE project in Australia.
 
 # Materials & Methods
 
@@ -58,13 +55,15 @@ Details on sample sizes are summarized as a supplementary table (Table 1).
 
 ## Spatial Analysis of Field Trials with Splines (SpATS)
 
-To determine the upper limit of phenotypic variation attributable to spatial process, we used the Spatial Analysis of Field Trials with Splines (SpATS).
+To determine the upper limit of phenotypic variation attributable to spatial process, we used the Spatial Analysis of Field Trials with Splines (SpATS) [@rodriguez-alvarez_correcting_2018].
 Using P-spline, this method quantifies a fraction of phenotypic variation attributable to any spatial process. 
 SpATS also quantified broad-sense heritability explained by plant's own genotypic effects.
 
-Describe:
+Describe the SpATS methods:
 - response variable  
 - covariates  
+- random and fixed effects
+- and other modified parameters
 
 For this line of spatial genetic analyses, we used the SpATS package [@rodriguez-alvarez_correcting_2018] implemented in R version x.x.x (R Core Team 2024).  
 
@@ -96,14 +95,15 @@ Theoretical details are described in @sato_neighbor_2021.
 ### Phenotypic variation explained by neighbor genotypes
 
 To examine how largely spatial variation can be explained by neighboring genotypes, we used the Neighbor GWAS package to quantify variance components in Eq. X. 
-We examined two cut-off thresholds of minor allele frequency (MAF) at 5% or 1%. 
-The former is a standard criterion in plant GWAS (e.g., ) while the latter includes relatively rare variants [e.g., @xu_genome-wide_2023], leaving approx. 20,578 and 14,568 SNPs, respectively (Table 1).
+We examined two cut-off thresholds of minor allele frequency (MAF) at 5% or 1%, leaving approx. 20,578 and 14,568 SNPs, respectively (Table 1). 
+The former cut-off percentage is often adopted in plant GWAS [@tibbs_cortes_status_2021] while the latter includes relatively rare but sometimes meaningful variants [@tibbs_cortes_status_2021; @xu_genome-wide_2023].
 The damage severity score (from 0 to **X**) of three disease symptoms were separately analyzed as a target phenotype: net form net blotch, spot form net blotch, and scald.
 The end-point damage score was used as a representative phenotype for each year.
-The difference of the three study years (2015, 2016, and 2017) was considered non-genetic covariates.
-Regarding the spatial range to be referred, we analyzed up to **xxx** nearest neighbors in a field, which corresponds up to 4.2 Euclidian distance from focal plants.
+Non-genetic covariates were also considered for the differences of the three study years (2015, 2016, and 2017) and spatial positions (rows and ranges) of field plots.
+Along the rows and ranges, SpATS analysis detected the non-linear spatial trends of disease phenotypic values among field plots (see Results below); therefore, the first to forth polynomials were considered for the non-genetic covariates of rows and ranges to correct for the non-linear spatial patterns.
+Regarding the spatial range to be referred, we analyzed up to the fourth nearest neighbors in a field, which corresponds up to 4.2 Euclidean distance from focal plants.
 This is because, when spatial range is too broad, plant's own genotypic value $x_i$ and neighbor genotypic values $\sum_{j=1}^J{(x_ix_j)/J}$ have a severe co-linearity [@sato_neighbor_2021; @sato_reducing_2024].  
-To address such a co-linearity, likelihood ratio tests were performed for x and y from simpler to complex models following @sato_reducing_2024.  
+To address such a co-linearity, likelihood ratio tests were performed for eq. **x** and eq. **y** from simpler to complex models following @sato_reducing_2024.  
 
 
 ### Genome-wide association study (GWAS)
@@ -121,7 +121,7 @@ The standard GWAS was also performed using Neighbor GWAS, which internally uses 
 ## Spatial heterogeneity of disease infection
 We used SpATS to quantify spatial variation in the three disease phenotypes --- namely, net form net blotch, spot form net blotch, and scald --- in barley.
 
-- describe results
+- describe SpATS results
 
 These results showed that a substantial spatial heterogeneity of disease infection was unexplained by plants' own genotypes and thus left a room to be explained by neighboring genotypes.
 
@@ -139,11 +139,11 @@ These PVE analyses showed that a significant fraction of spatial heterogeneity o
 ## Genome-wide association study
 Lastly, we used Neighbor GWAS to detect large-effect loci responsible for neighbor genotypic effects on the three phenotypes of disease infection.
 We detected two significant SNPs associated with neighbor genotypic effects, one of which were for net form net blotch and another was for scald (Fig. 4B, C, D). 
-The significant SNP of neighbor genotypic effects on the net form net blotch was located on the tip of 7H chromosome (Fig. 4B)
-These findings suggest that xxx.  
+The significant SNP of neighbor genotypic effects on the net form net blotch was located on the tip of 7H chromosome (Fig. 4B).
+**Further description of beta2 estimates of the top-scoring SNP.**
+These findings suggest that **a summary of major findings from this paragraph**.  
 
 To examine whether neighbor genotypic effects shared the same genetic architecture with plant's own genotypic effects, we also conducted standard GWAS and compared it with Neighbor GWAS.
-
 
 - QTL position of NFNB in comparison with self-QTL  
 - QTL position of SFNB in comparison with self-QTL   
@@ -153,7 +153,7 @@ These results suggest that plant' own and neighbor genotypic effects on disease 
 
 # Discussion
 Our quantitative genetic analyses revealed that significant fractions of spatial heterogeneity was attributable to neighbor genotypes in barley diseases.
-Similarly, studies on indirect genetic effects reported the influence of neighboring genotypes on the other individuals' phenotypes in _Arabidopsis_ [@montazeaud_indirect_2023], _Eucalyptus_ [@costa_e_silva_genetic-based_2017], and xxx.
+Similarly, studies on indirect genetic effects reported the influence of neighboring genotypes on the other individuals' phenotypes in _Arabidopsis_ [@montazeaud_indirect_2023], _Eucalyptus_ [@costa_e_silva_genetic-based_2017], and **other examples to be cited**.
 While these previous studies also quantified the phenotypic variation attributable to neighboring genotypes, genetic variants has yet to be identified.
 In this context, our Neighbor GWAS analysis detected a significant SNP associated with neighbor genotypic effects on the net blotch damage.
 This is the first example for Neighbor GWAS to detect a significant QTL and, to our knowledge, one of few reports of significant QTLs responsible for neighbor genotypic effects [@montazeaud_cultivar_2022].  
@@ -170,7 +170,7 @@ Furthermore, we detected a significant QTL that had negative effects of allelic 
 
 The influence of neighboring genotypes depends not only on plant genetics but also on pathogen life histories, with respect to generation time and dispersal mode.
 
-- discussion on the generation time and dispersal model of NFNB, SFNB, and Scald
+- discussions on the generation time and dispersal model of NFNB, SFNB, and Scald (based on Iqra's literature survey)
 
 
 ## Applicability and limitation
@@ -194,15 +194,15 @@ Further studies are needed to validate these effects by comparing allelic monocu
 All the source code and input data are available at GitHub (<https://github.com/yassato/caige_barley>) and Zenodo (<https://doi.org/xxxxxx>).  
 
 # Author contributions
-IA: investigation, formal analysis, funding acquisition, writing; KKS: supervision, funding acquisition, writing; RSI: supervision, funding acquisition, writing; YS: conceptualization, investigation, formal analysis, supervision, funding acquisition, writing
+IA: investigation, formal analysis, funding acquisition, writing; KKS: supervision, funding acquisition, writing; RSI: supervision, funding acquisition, writing; YS: methodology, investigation, data curation, formal analysis, supervision, funding acquisition, writing
 
 # Acknowledgement
-The authors appreciate all efforts made by the data collectors of the CAIGE project. Thanks are also given to Lukas Rohr for his preliminary analysis during the early stage of this study. This study was supported by SNSF Spark (xxxx to YS); JST FOREST (yyyy to YS); and Hokkaido University‘s EXEX Doctoral Fellowship to IA.
+The authors appreciate all efforts made by the data collectors of the CAIGE project. Thanks are also given to Lukas Rohr, a former master student at the University of Zurich, for pilot analyses during the initial stage. This study was supported by the Japan Science and Technology Agency (JST) FOREST program (grant no. xxx to YS); Swiss National Science Foundation (SNSF) Spark program (yyy to YS); and JST SPRING program (zzz through Hokkaido University's EXEX Doctoral Fellowship to IA). The authors declare that there is no conflict of interest in this study.
 
 
 # Figures
 
-- Figure 1. Workflow
+- Figure 1. Workflow or scheme (if helpful)
 
 - Figure 2. SpATS for visualization of spatial heterogeneity
 
@@ -246,86 +246,86 @@ Table S2. The proportion of phenotypic variation explained (PVE) by plant's own 
 
 (A) Net form net blotch
 
-| **Distance** | **PVEself** | **PVEneighbor** | **$\chi^2_1$** | **$p$-value** |
-|--------------|-------------|-----------------|-------------|-------------|
-| 0.00         | 0.324       | 0.000           | 4.721       | 0.02980     |
-| 1.00         | 0.324       | 0.157           | 6.964       | 0.00831     |
-| 1.42         | 0.324       | 0.183           | 6.238       | 0.01251     |
-| 2.00         | 0.324       | 0.233           | 6.436       | 0.01119     |
-| 2.84         | 0.324       | 0.241           | 6.475       | 0.01094     |
-| 3.00         | 0.324       | 0.236           | 5.624       | 0.01772     |
-| 4.00         | 0.324       | 0.242           | 5.361       | 0.02059     |
-| 4.25         | 0.324       | 0.188           | 2.127       | 0.14469     |
+| **Distance** | **PVE(self)** | **PVE(neighbor)** | **$\chi^2_1$** | **$p$-value** |
+|----------------|-----------------|---------------------|------------|-------------|
+| 0.00           | 0.366           | 0.000               | 5.012      | 0.025       |
+| 1.00           | 0.366           | 1.000               | 5.684      | 0.017       |
+| 1.42           | 0.366           | 1.424               | 4.029      | 0.045       |
+| 2.00           | 0.366           | 2.000               | 3.741      | 0.053       |
+| 2.84           | 0.366           | 2.838               | 3.064      | 0.080       |
+| 3.00           | 0.366           | 3.000               | 2.661      | 0.103       |
+| 4.00           | 0.366           | 4.000               | 2.979      | 0.084       |
+| 4.25           | 0.366           | 4.253               | 0.552      | 0.457       |
 
 
 (B) Spot form net blotch
 
-| **Distance** | **PVEself** | **PVEneighbor** | **$\chi^2_1$** | **$p$-value** |
-|--------------|-------------|-----------------|-------------|-------------|
-| 0.00         | 0.336       | 0.000           | 6.53        | 0.01059     |
-| 1.00         | 0.336       | 0.108           | 2.79        | 0.09471     |
-| 1.42         | 0.336       | 0.179           | 6.08        | 0.01369     |
-| 2.00         | 0.336       | 0.263           | 9.96        | 0.00160     |
-| 2.84         | 0.336       | 0.187           | 4.12        | 0.04236     |
-| 3.00         | 0.336       | 0.227           | 4.75        | 0.02930     |
-| 4.00         | 0.336       | 0.167           | 2.59        | 0.10720     |
-| 4.25         | 0.336       | 0.160           | 2.12        | 0.14492     |
+| **Distance** | **PVE(self)** | **PVE(neighbor)** | **$\chi^2_1$** | **$p$-value** |
+|----------------|-----------------|---------------------|------------|-------------|
+| 0.00           | 0.228           | 0.000               | 2.913      | 0.088       |
+| 1.00           | 0.228           | 0.146               | 2.734      | 0.098       |
+| 1.42           | 0.228           | 0.199               | 4.366      | 0.037       |
+| 2.00           | 0.228           | 0.303               | 6.938      | 0.008       |
+| 2.84           | 0.228           | 0.198               | 2.305      | 0.129       |
+| 3.00           | 0.228           | 0.222               | 2.033      | 0.154       |
+| 4.00           | 0.228           | 0.141               | 0.625      | 0.429       |
+| 4.25           | 0.228           | 0.127               | 0.410      | 0.522       |
   
 (C) Scald
 
-| **Distance** | **PVEself** | **PVEneighbor** | **$\chi^2_1$** | **$p$-value** |
-|--------------|-------------|-----------------|-------------|-------------|
-| 0.00         | 0.588       | 0.000           | 15.21       | 9.595E-05   |
-| 1.00         | 0.588       | 0.195           | 30.29       | 3.723E-08   |
-| 1.42         | 0.588       | 0.095           | 15.18       | 9.771E-05   |
-| 2.00         | 0.588       | 0.167           | 17.63       | 2.682E-05   |
-| 2.84         | 0.588       | 0.092           | 7.33        | 6.789E-03   |
-| 3.00         | 0.588       | 0.117           | 9.22        | 2.398E-03   |
-| 4.00         | 0.588       | 0.148           | 10.25       | 1.364E-03   |
-| 4.25         | 0.588       | 0.149           | 8.91        | 2.828E-03   |
+| **Distance** | **PVE(self)** | **PVE(neighbor)** | **$\chi^2_1$** | **$p$-value** |
+|--------------|---------------|-------------------|----------|-----------|
+| 0.00         | 0.591         | 0.000             | 14.659   | 0.00013   |
+| 1.00         | 0.591         | 0.191             | 28.423   | 9.75E-08  |
+| 1.42         | 0.591         | 0.098             | 14.040   | 0.00018   |
+| 2.00         | 0.591         | 0.175             | 17.141   | 3.47E-05  |
+| 2.84         | 0.591         | 0.101             | 6.129    | 0.0133    |
+| 3.00         | 0.591         | 0.130             | 8.517    | 0.0035    |
+| 4.00         | 0.591         | 0.161             | 9.944    | 0.0016    |
+| 4.25         | 0.591         | 0.161             | 8.470    | 0.0036    |
 
   
 Table S3. The proportion of phenotypic variation explained (PVE) by plant's own (PVEself) or neighbor (PVEneighbor) genotypes at MAF = 0.05. For distance $\neq$ 0, likelihood ratio tests based on $\chi^2_1$-statistic were used to determine $p$-values of Neighbor GWAS models over a standard GWAS model. For distance = 0, likelihood ratio tests were performed over a null model, which made PVEself equivalent to a SNP heritability (see also Methods "Phenotypic variation explained by neighbor genotypes").  
 
 (A) Net form net blotch
 
-| **Distance** | **PVEself** | **PVEneighbor** | **$\chi^2_1$** | **$p$-value** |
-|--------------|-------------|-----------------|-------------|-------------|
-| 0.00         | 0.324       | 0.000           | 4.72        | 0.0298      |
-| 1.00         | 0.324       | 0.157           | 6.96        | 0.0083      |
-| 1.42         | 0.324       | 0.183           | 6.24        | 0.0125      |
-| 2.00         | 0.324       | 0.233           | 6.44        | 0.0112      |
-| 2.84         | 0.324       | 0.241           | 6.47        | 0.0109      |
-| 3.00         | 0.324       | 0.236           | 5.62        | 0.0177      |
-| 4.00         | 0.324       | 0.242           | 5.36        | 0.0206      |
-| 4.25         | 0.324       | 0.188           | 2.13        | 0.1447      |  
+| **Distance** | **PVE(self)** | **PVE(neighbor)** | **$\chi^2_1$** | **$p$-value** |
+|--------------|---------------|-------------------|----------|-----------|
+| 0.00         | 0.296         | 0.000             | 4.878    | 0.027     |
+| 1.00         | 0.296         | 0.163             | 5.782    | 0.016     |
+| 1.42         | 0.296         | 0.160             | 3.977    | 0.046     |
+| 2.00         | 0.296         | 0.210             | 3.532    | 0.060     |
+| 2.84         | 0.296         | 0.217             | 2.942    | 0.086     |
+| 3.00         | 0.296         | 0.216             | 2.378    | 0.123     |
+| 4.00         | 0.296         | 0.216             | 2.793    | 0.095     |
+| 4.25         | 0.296         | 0.105             | 0.399    | 0.528     |
   
 
 (B) Spot form net blotch
 
-| **Distance** | **PVEself** | **PVEneighbor** | **$\chi^2_1$** | **$p$-value** |
-|--------------|-------------|-----------------|-------------|-------------|
-| 0.00         | 0.265       | 0.000           | 6.29        | 0.0122      |
-| 1.00         | 0.265       | 0.110           | 2.56        | 0.1093      |
-| 1.42         | 0.265       | 0.192           | 5.93        | 0.0149      |
-| 2.00         | 0.265       | 0.282           | 9.06        | 0.0026      |
-| 2.84         | 0.265       | 0.212           | 4.10        | 0.0430      |
-| 3.00         | 0.265       | 0.248           | 4.50        | 0.0339      |
-| 4.00         | 0.265       | 0.180           | 2.37        | 0.1240      |
-| 4.25         | 0.265       | 0.175           | 1.99        | 0.1587      |  
+| **Distance** | **PVE(self)** | **PVE(neighbor)** | **$\chi^2_1$** | **$p$-value** |
+|--------------|---------------|-------------------|----------|-----------|
+| 0.00         | 0.166         | 0.000             | 2.598    | 0.107     |
+| 1.00         | 0.166         | 0.145             | 2.449    | 0.118     |
+| 1.42         | 0.166         | 0.207             | 4.117    | 0.042     |
+| 2.00         | 0.166         | 0.313             | 5.776    | 0.016     |
+| 2.84         | 0.166         | 0.212             | 1.881    | 0.170     |
+| 3.00         | 0.166         | 0.227             | 1.448    | 0.229     |
+| 4.00         | 0.166         | 0.093             | 0.150    | 0.699     |
+| 4.25         | 0.166         | 0.060             | 0.044    | 0.833     |
   
 (C) Scald
 
-| **Distance** | **PVEself** | **PVEneighbor** | **$\chi^2_1$** | **$p$-value** |
-|--------------|-------------|-----------------|-------------|-------------|
-| 0.00         | 0.510       | 0.000           | 14.92       | 0.0001      |
-| 1.00         | 0.510       | 0.226           | 29.56       | 5.42E-08    |
-| 1.42         | 0.510       | 0.114           | 14.73       | 0.0001      |
-| 2.00         | 0.510       | 0.187           | 16.14       | 5.89E-05    |
-| 2.84         | 0.510       | 0.112           | 7.22        | 0.0072      |
-| 3.00         | 0.510       | 0.142           | 9.00        | 0.0027      |
-| 4.00         | 0.510       | 0.177           | 9.80        | 0.0017      |
-| 4.25         | 0.510       | 0.177           | 8.50        | 0.0036      |  
+| **Distance** | **PVE(self)** | **PVE(neighbor)** | **$\chi^2_1$** | **$p$-value** |
+|--------------|---------------|-------------------|----------|-----------|
+| 0.00         | 0.511         | 0.000             | 14.292   | 0.0002    |
+| 1.00         | 0.511         | 0.224             | 27.382   | 1.67E-07  |
+| 1.42         | 0.511         | 0.118             | 13.395   | 0.0003    |
+| 2.00         | 0.511         | 0.200             | 15.411   | 8.65E-05  |
+| 2.84         | 0.511         | 0.124             | 5.958    | 0.0147    |
+| 3.00         | 0.511         | 0.158             | 8.134    | 0.0043    |
+| 4.00         | 0.511         | 0.193             | 9.314    | 0.0023    |
+| 4.25         | 0.511         | 0.193             | 7.883    | 0.0050    |
   
 
 - Table S4. List of top-hit SNPs at each spatial scale

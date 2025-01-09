@@ -66,7 +66,7 @@ total = res$PVEself+res$PVEnei
 res = data.frame(res,total)
 
 delta_PVE(res)
-
+# write.csv(res,"./output/PVE_Scald_MAF5.csv")
 
 #pooled experiment GWAS:
 #NFNB (1,6,10): distance best at 2, delta_PVE chose 1

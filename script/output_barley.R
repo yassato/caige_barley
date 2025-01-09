@@ -96,7 +96,7 @@ bar2 = ggplot(data=res2,aes(x=dist,y=PVE,fill=type)) + geom_bar(stat="identity")
   ylab("PVE") + xlab("Euclidian distance from focal plants") + 
   ylim(NA,1) + theme(legend.position="none") #+ labs(subtitle="Spot form net blotch")
 
-out = read.csv("./output/PVE_Scald_MAF1.csv")
+out = read.csv("./output/PVE_Scald_MAF5.csv")
 chi2 = qchisq(1-out$p_val,1)
 h2 = rep(out$PVEself[1],length(out$PVEself))
 netPVE = out$total - out$PVEself[1]
