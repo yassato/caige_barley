@@ -27,11 +27,11 @@ for(k in 1:length(gwas)) {
 
 th_maf5 = nrow(filter(gwas[[1]], MAF>0.05))
 
-out = gwas[[1]]
+out = gwas[[6]]
 chr_rep = table(out$CHROM)
 cols = rep(rep(c(grey(0.5,0.5),"black"),times=length(chr_rep)/2),times=chr_rep)
 x = coord(out$CHROM,out$POS)
-p = out$p_self
+p = out$p_nei
 man = ggplot(NULL,aes(x=x$coord,y=-log10(p))) + geom_point(colour=cols,alpha=0.5) + theme_classic() + 
   scale_x_continuous(name="Chromosomes", breaks=x$tic, labels=names(chr_rep)) + ylim(NA,7.5) +
   ylab(expression(-log[10]*(italic(p)))) + geom_hline(yintercept=-log10(0.05/th_maf1),lty=1,colour="grey") +
@@ -42,7 +42,7 @@ man = ggplot(NULL,aes(x=x$coord,y=-log10(p))) + geom_point(colour=cols,alpha=0.5
     plot.background = element_rect(fill = "transparent",color = NA)
   )
 
-ggsave(man,filename=paste0("./figures/",prfx,"_man_self.pdf"),height=2,width=5,dpi=600)
+ggsave(man,filename=paste0("./figures/",prfx,"_man.pdf"),height=2,width=5,dpi=600)
 
 o = -log(sort(p,decreasing=FALSE),10)
 e = -log(ppoints(length(p)),10)
@@ -56,7 +56,7 @@ qq = ggplot(data=NULL, mapping=aes(x=e,y=o))+
     plot.background = element_rect(fill = "transparent",color = NA)
   )
 
-ggsave(qq,filename=paste0("./figures/",prfx,"_qq_self.pdf"),height=3,width=3,dpi=600)
+ggsave(qq,filename=paste0("./figures/",prfx,"_qq.pdf"),height=3,width=3,dpi=600)
 
 th_maf1
 th_maf5
