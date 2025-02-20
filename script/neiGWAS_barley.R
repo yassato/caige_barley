@@ -2,7 +2,7 @@ library(rNeighborGWAS)
 library(tidyverse)
 
 # load phenotype data
-pheno = read.csv("./pheno/Scald_merged.csv")
+pheno = read.csv("./pheno/NFNB_merged.csv")
 pheno$Experiment_Number = as.factor(pheno$Experiment_Number)
 print(nrow(pheno))
 
@@ -28,7 +28,7 @@ print(length(table(pheno$Name)))
 #prepare geno, filter minor alleles
 #maf_filter is set in settings at top of script
 maf_filter = 0.01
-af = rowSums(geno)/(2*ncol(geno)) #assuming geno is complete
+af = rowSums(geno)/(2*ncol(geno)) #assuming geno is completed; raw data ~ 0,1,2, so 2* for ncol()
 rare_allele = ifelse(af<maf_filter|1-af<maf_filter,TRUE,FALSE)
 geno = filter(geno,!rare_allele)
 
