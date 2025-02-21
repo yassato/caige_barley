@@ -8,7 +8,7 @@ bibliography: zotero.bib
 csl: g3.csl
 ---
 
-**Iqra Akram**^1^, **Rie Shimizu-Inatsugi**^2^, \& **Yasuhiro Sato**^1,3\*^    
+**Iqra Akram**^1^, **Rie Shimizu-Inatsugi**^2^, \& **Yasuhiro Sato**^1,2,3\*^    
 
 ^1^Graduate School of Environmental Science, Hokkaido University, N10W5 Kita-ku, Sapporo 060-0810, Hokkaido, Japan  
 ^2^Department of Evolutionary Biology and Environmental Studies, University of Zurich
@@ -19,25 +19,16 @@ ORCID: 0000-0002-6466-723X (Y.S.)
   
 
 # Abstract
-Pest damage exhibits considerable spatial heterogeneity among individual plants in field environments. 
-While such spatial heterogeneity was often treated as an environmental nuisance in quantitative genetics, underlying biotic factors and loci gain remain unexplored.
-To quantify disease spatial variation and associate it with neighbor genotypes, we applied applied two methods, Spatial Analysis of Field Trials with Splines (SpATS) and Neighbor Genome-Wide Association Study (Neighbor GWAS), to barley cultivars.
-Having compiled the CIMMYT Australia ICARDA Germplasm Evaluation (CAIGE) data, we first applied SpATS to damages by three diseases such as the net form net blotch, spot form net blotch, and scald.
-This SpATS analysis showed extraneous phenotypic variation unexplained by spatial autocorrelation, thereby leading us to conduct further variance component analysis and GWAS. 
-We then applied the Neighbor GWAS model to further variance component analysis and found that 10-30% variation of the three disease phenotypes was significantly explained by neighbor genotypic identity. 
-The Neighbor GWAS method also detected a relatively rare but significant variant that was located on the barley 7H chromosome and associated with neighbor genotypic influence on the net form net blotch.
-This significant variant was estimated to have a positive effect of the allelic similarity on the disease damage, indicating an adversarial influence of its allelic mixture on the spread of net form net blotch.
-These findings suggest that neighbor genotype identity is a key to account for spatial heterogeneity and reduce pest damage by variety mixture in field crops.  
+Pest damage exhibits considerable spatial heterogeneity among individual plants in field environments. While such spatial heterogeneity has often been treated as a nuisance in crop breeding trials, underlying biotic factors and loci remain largely unknown. To quantify disease spatial variation and associate it with neighbor genotypes, we applied applied two methods, Spatial Analysis of Field Trials with Splines (SpATS) and Neighbor Genome-Wide Association Study (Neighbor GWAS), to barley cultivars. Having compiled the CIMMYT Australia ICARDA Germplasm Evaluation (CAIGE) data, we first applied SpATS to damages by three diseases such as the net form net blotch, spot form net blotch, and scald. This SpATS analysis showed extraneous phenotypic variation unexplained by spatial autocorrelation, thereby leading us to conduct further variance component analysis and GWAS. We then applied the Neighbor GWAS model and found that 10-30% variation of the three disease phenotypes was explained by neighbor genotypic identity. The Neighbor GWAS method also detected two significant variants that were located on the barley 7H chromosome and associated with neighbor genotypic influence on the net form net blotch and scald. These significant variants were estimated to have positive effects of their allelic mixtures on the disease damage. These findings suggest that neighbor genotype identity can be a key to account for spatial variation and reduce pest damage by variety mixture in field crops.  
 
 # Introduction
-
 Natural and field-grown plants exhibit considerable spatial variation in their phenotypes, which is shaped by abiotic and biotic factors. Pest damage, such as pathogen infection [@rieux_long-distance_2014] and insect herbivory [@the_herbivory_variability_network__plant_2023], is especially heterogeneous among conspecific individual plants in the field. While spatial heterogeneity has been considered a nuisance in crop breeding trials [@rodriguez-alvarez_correcting_2018], extraneous spatial variation is sometimes shaped by biotic interactions. For example, neighboring genotypes are one of biotic factors that can shape spatial heterogeneity of pest damage [@dahlin_pest_2018; @tamura_intraspecific_2020; @costa_e_silva_genetic-based_2017; @pelissier_genetic_2023]. In a close proximity, plant-plant interactions are driven by volatile communications among genotypes, allowing variety mixture to be resistant to pests [@dahlin_pest_2018]. Even when direct plant-plant communications are absent, resistant genotypes protect susceptible neighbors [@tamura_intraspecific_2020] or susceptible genotypes spread pests to resistant genotypes _vice versa_ [@utsumi_plant_2011-1]. Because of this line of biological relevance, the genetics of conspecific neighbor effects offer a way of pest control by variety mixtures [@mundt_use_2002; @dahlin_pest_2018; @montazeaud_cultivar_2022; @sato_genetics_2024].  
 
-Barley (_Hordeum vulgare_) is an important cereal crop and infected by various fungal pathogens worldwide. For example, _Pyrenophora teres_ is a causal agent of net blotch symptom in barley [@liu_pyrenophora_2011], in which _P. teres_ f. _teres_ and _P. teres_ f. _maculata_ induce different symptoms, net form and spot form net blotch, respectively. In addition to _P. teres_, _Rhynchosporium secalis_ is known as a causal agent of barley scald also known as 'leaf blotch' [@abang_differential_2006; @zhan_resistance_2008]. These fungi immediately develop spores on primary host plants under moderate climate, splash conidia by wind, and can trigger secondary infection to another plant during the growing season of barley [@liu_pyrenophora_2011; @zhan_resistance_2008]. To date, quantitative trait locus (QTL) mapping and genome-wide association studies (GWAS) have identified multiple loci associated with barley resistance to net blotch and scald [@novakazi_genetic_2019; @richards_association_2017; @tamang_association_2015]. Little is known, however, about the influence of neighboring genotypes and their associated variants.
+Barley (_Hordeum vulgare_) is an important cereal crop and infected by various fungal pathogens worldwide. For example, _Pyrenophora teres_ is a causal agent of net blotch symptom in barley [@liu_pyrenophora_2011], in which _P. teres_ f. _teres_ and _P. teres_ f. _maculata_ induce different symptoms, net and spot form net blotch, respectively. In addition to _P. teres_, _Rhynchosporium secalis_ is known as a causal agent of barley scald also known as 'leaf blotch' [@abang_differential_2006; @zhan_resistance_2008]. These fungi immediately develop spores on primary host plants under moderate climate, splash conidia by wind, and can trigger secondary infection to another plant during the barley growing season [@liu_pyrenophora_2011; @zhan_resistance_2008]. To date, quantitative trait locus (QTL) mapping and genome-wide association studies (GWAS) have identified multiple loci associated with barley resistance to net blotch and scald [@novakazi_genetic_2019; @richards_association_2017; @tamang_association_2015]. Little is known, however, about the influence of neighboring genotypes and their associated variants.
 
-To analyze the influence of neighboring genotypes on individual traits, we have recently developed a new method of GWAS, called "Neighbor GWAS" [@sato_neighbor_2021]. Inspired by the Ising model of magnetics, the Neighbor GWAS method expands a standard mixed model to incorporate locus-wise interactions among neighboring genotypes. Owing to its locus-wise modelling, the Neighbor GWAS method can be applied to any randomized cultivation of multiple varieties. As such a randomized spatial arrangement has often been adopted in GWAS experiments [e.g., @@sato_reducing_2024; @mcfarland_maize_2020; @jung_genetic_2022; @flutre_genome-wide_2022], the Neighbor GWAS method possesses wide applicability to any plant GWASs. For instance, our previous study demonstrated the power of Neighbor GWAS to predict key genotype pairs that mitigated insect herbivory in *Arabidopsis thaliana*. Although this workflow may also be applied to agricultural data, the Neighbor GWAS method has not been applied to crop data.  
+To analyze the influence of neighboring genotypes on individual traits, we have recently developed a new method of genome-wide association study (GWAS), called "Neighbor GWAS" [@sato_neighbor_2021]. Inspired by the Ising model of magnetics, the Neighbor GWAS method expands a standard mixed model to incorporate locus-wise interactions among neighboring genotypes. Owing to its locus-wise modelling, the Neighbor GWAS method can be applied to any randomized cultivation of multiple varieties. As such a randomized spatial arrangement has often been adopted in GWAS experiments [@sato_reducing_2024; @mcfarland_maize_2020; @jung_genetic_2022; @flutre_genome-wide_2022], the Neighbor GWAS method possesses wide applicability to any plant GWASs. For instance, our previous study demonstrated the power of Neighbor GWAS to predict key genotype pairs that mitigated insect herbivory in *Arabidopsis thaliana*. Although this workflow may also be applied to agricultural data, the Neighbor GWAS method has not been applied to crop data.  
 
-In this study, we investigated spatial heterogeneity of disease infection, such as net blotch and scaled, in barley. Specifically, we aimed to address the following questions: (i) Was the significant fraction of disease infection explained by any spatial process? (ii) To what extent was the spatial variation explained by neighboring genotypic identity? (iii) Were there any significant QTL responsible for the neighbor genotypic effects on disease infection? To address these questions, we applied two methods of quantitative genetics, SpATS and Neighbor GWAS, for publicly available data deposited by the CIMMYT Australia ICARDA Germplasm Evaluation (CAIGE) project.
+In this study, we investigated spatial heterogeneity of disease infection, such as net blotch and scaled, in barley. Specifically, we aimed to address the following questions: (i) Was there extraneous spatial variation in disease infection? (ii) To what extent was the spatial variation explained by neighboring genotypic identity? (iii) Were there any significant QTLs responsible for the neighbor genotypic effects on disease infection? To address these questions, we applied two methods, SpATS and Neighbor GWAS, for publicly available data deposited by the CIMMYT Australia ICARDA Germplasm Evaluation (CAIGE) project.
 
 # Materials & Methods
 
@@ -56,13 +47,15 @@ Details on sample sizes are summarized as a supplementary table (Table 1).
 ## Spatial Analysis of Field Trials with Splines (SpATS)
 
 We used the Spatial Analysis of Field Trials with Splines (SpATS) [@rodriguez-alvarez_correcting_2018] to quantify normal and extraneous spatial heterogeneity of plant damage by the net form net blotch, spot form net blotch, and scald.
-**The SpATS method estimates the proportion of the phenotypic variation directed to spatial correlation by exhibiting the spatial dependency of the observations according to their closeness in the field. SpATS models the spatial effects using P-splines along and calculates the amount of phenotypic variation owing to spatial processes. This can also model intricate spatial structures by using smoothing splines for equal row and column displacements. SpATS also quantified broad-sense heritability described by plant’s own genotypic effects.**  
+The SpATS method employs a spline method to estimate spatial trends across two dimensional space along rows and ranges according to their spatial proximity [@rodriguez-alvarez_correcting_2018]. 
+By modeling spatial trends, SpATS can also estimate the amount of phenotypic variation owing to genotypes and the spatial trends [@rodriguez-alvarez_fast_2015], allowing us to quantify broad-sense heritability attributable to plants' own genotypic effects. 
+Extraneous spatial heterogeneity can also be visualized by calculating row and column displacements for unexplained residuals [@gilmour_accounting_1997].  
 
 To apply the SpATS method to barley data, we utilized the SpATS package [@rodriguez-alvarez_correcting_2018] implemented in R version 4.3.0 [@Rcite], with the following arguments specified in the SpATS and other optional functions.
 Damage levels (score variable) for the net form net blotch, spot form net blotch, and scald were separately analyzed as a response variable.
 The study years and experimental blocks of field trials were considered non-genetic covariates and included as fixed effects.
 Genotypes (i.e., the name of cultivars) and spatial positions (i.e., row and range) were considered random effects: the former was specified as "genotype.as.random = TRUE" and the latter was specified as "random = row + range" within the SpATS function.
-We set "ANOVA = TRUE" within the SAP function of the SpATS package to enable variance components to be quantified among the random effects of genotypes and spatial positions [@rodriguez-alvarez_fast_2015].
+The other parameters were set as default in the SpATS and its auxiliary SAP function, which corresponded to a cubic B-spline and second penalty order [@rodriguez-alvarez_correcting_2018].
 The getHeritability function was also used to calculate a generalized broad-sense heritability $H^2$ [@oakey_joint_2006].
 The estimated spatial heterogeneity was visualized using the plot.variogram.SpATS function, which depicted sample variograms based on displacements among rows, column and residuals [@gilmour_accounting_1997].  
 
@@ -113,40 +106,36 @@ The standard GWAS was also performed using Neighbor GWAS, which internally uses 
 We determined the statistical significance at $p$ = 0.05 and the marginal significance between $p$ = 0.05 and 0.1 throughout the present study.
 To check if any genes are located near our focal SNPs, we refer to the genome annotation of Barley Morex V3 [@mascher_long-read_2021] through the GrainGenes database (<https://wheat.pw.usda.gov/GG3/genome_browser>).  
 
-## Data availability
-All the source code and input data are available at GitHub (<https://github.com/yassato/caige_barley>).
-Supplementary Figure S1 presents GWAS QQ plots.
-Supplementary Table S1 shows the list of exact URLs for the original input data.
-Supplementary Table S2 and S3 include the exact $p$-values for the likelihood ratio tests shown in Figure 2.
-All the supplementary figures and tables are available through Figshare at https://doi.org/xxxxxx.
-
 
 # Results
 
 ## Spatial heterogeneity of disease infection
 We used SpATS to distinguish genetic and spatial variation in the three disease phenotypes --- namely, net form net blotch, spot form net blotch, and scald --- among barley cultivars.
-The broad-sense heritability $H^2$ was 0.78 for the net form net blotch; 0.68 for spot form net blotch; and 0.65 for scald, indicating that the moderate to high variation could be explained by plants' own genotypes.
-Besides these genetic variations, there was spatial variation along the rows and columns of field plots (Table SX). 
-Furthermore, spatial variograms display extraneous variation in unexplained residuals along the rows and columns, in which the spatial curves presented the wavy pattern for each disease (Fig. 1).
-These results showed that the substantial spatial heterogeneity of disease infection was unexplained by plants’ own genotypes and smooth spatial trends, leaving a room to be explained by the other factors such as neighboring genotypes.
+The generalized broad-sense heritability $H^2$ [@oakey_joint_2006] was estimated as 0.78 for the net form net blotch; 0.68 for spot form net blotch; and 0.65 for scald, indicating that the moderate to high variation could be explained by plants' own genotypes.
+Besides these genetic variations, SpATS analysis quantified spatial variation along the rows and columns of field plots (Table 2).
+The net form net blotch exhibited considerable spatial variation along the row position, while the spot form net blotch showed less spatial variation (Table 2).
+The scald exhibited substantial spatial variation along the both rows and ranges (Table 2).
+Still, all of these three disease had substantial residuals unexplained by genotypes and spatial proximity.
+Such extraneous variation was displayed for unexplained residuals along the rows and columns, such that sample variograms presented the wavy pattern for each disease (Fig. 1).
+These results showed that the substantial spatial heterogeneity of disease infection was unexplained by plants’ own genotypes and smooth spatial trends, leaving a room to incorporate the other factors such as neighboring genotypes.
 
 ## Phenotypic variation explained by neighbor genotypes
 Subsequently, we asked to what extent the spatial heterogeneity could be explained by neighbor genotypic effects. 
-To address this question, we calculated phenotypic variation explained by neighbor genotype identity using the Neighbor GWAS model. 
+To address this question, we calculated phenotypic variation explained by neighbor genotype identity using the Neighbor GWAS model with the rows and ranges incorporated as non-genetic covariates. 
 All the three phenotypes of disease infection exhibited >20% SNP heritability $h^2_\text{SNP}$ regarding plant's own genotypic effects (blue bars in Fig. 2A-C).
-Specifically, the net form net blotch showed x\% heritability at the 5\% significance level ($h^2_\text{SNP}$ = x, $\chi^2_1=x$, $p<0.05$: see Table S2 for exact test-statistics and $p$-values).
-The spot form net blotch showed y\% heritability but at the marginally significance level ($\chi^2_1$ > xx, $p$ < 0.1).
-The scald showed z\% heritability at the 5\% significance level ($h^2_\text{SNP}$ = x, $\chi^2_1=x$, $p<0.05$).
-These SNP-based metrics of narrow-sense heritability were lower than the broad-sense heritability described above, but previous metrics also reported lower heritability for narrow-sense than broad-sense metrics (cite).
+Specifically, the net form net blotch showed 36.6\% heritability at the 5\% significance level (PVE at zero distance equivalent to $h^2_\text{SNP}$ = 0.366, $\chi^2_1$ = 5.01, $p$ < 0.05: see Table S2 for exact $p$-values).
+The spot form net blotch showed 22.8\% heritability but at the marginally significance level ($h^2_\text{SNP}$ = 0.228, $\chi^2_1$ = 2.91, $p$ < 0.1).
+The scald showed 59\% heritability at the 5\% significance level ($h^2_\text{SNP}$ = 0.591, $\chi^2_1$ = 14.3, $p$ < 0.001).
+These SNP-based metrics of narrow-sense heritability were lower than the broad-sense heritability described above, but this was also the case for previous studies on barley diseases (Kunze et al. 2019; Zerihun et al. 2019).
 These results confirmed that our SNP-based analysis was able to detect heritable variation in the three disease phenotypes.  
 
 More remarkably, we found significant contributions of neighbor genotypes to all the three disease phenotypes (red bars in Fig. 3A-C; likelihood ratio test, $\chi^2_1$ > xx, $p$ < 0.05 see Table S2 for exact test-statistics and $p$-values).
-For instance, the influence of neighbor genotypes on the net form net blotch was significant ($p$<0.05) up to the second nearest neighbors and remained marginally significant ($p$<0.1 and $p$>0.05) up to the fourth nearest neighbors (Fig. 3A and Table S2A).
+For instance, the influence of neighbor genotypes on the net form net blotch was significant ($p$ < 0.05) up to the second nearest neighbors and remained marginally significant ($p$ < 0.1 and $p$ > 0.05) up to the fourth nearest neighbors (Fig. 3A and Table S2A).
 The spot form net blotch was significantly influenced by the first and second nearest neighbors, though this influence became non-significant for the distant neighbors (Fig. 2B and Table S2B).
 The scald damage showed the most significant patterns among the three disease phenotypes, such that the influence of neighboring genotypes remained significant across a space (Fig. 2C and Table S2C).
 These significant contributions of neighbor genotypes to the three disease phenotypes explained 9 to 30% of total phenotypic variation (red bars in Fig. 2).
 The similar patterns were found even when the cut-off value of MAF was changed to 0.05 (Table S3A-C).
-These variance component analyses showed that a significant fraction of damage variation was attributable to neighbor genotypic identity, which led us to further ask whether major-effect SNPs underlay this damage variation.  
+These variance component analyses showed that a significant fraction of damage variation was attributable to neighbor genotypic identity, which led us to further ask whether major-effect SNPs accounted for this damage variation.  
 
 ## Genome-wide association study
 Lastly, we used Neighbor GWAS to detect loci associated with neighbor genotypic effects on the three phenotypes of disease infection at the spatial scales from the first to forth nearest neighbors.
@@ -157,12 +146,8 @@ This significant SNP exhibited a positive sign of neighbor effect coefficient ($
 Another significant SNP detected for scald was assigned as an un-anchored chromosome (Fig. 3F): thus, its QTL position remains unknown.
 In addition to the two significant SNPs, a marginally significant SNP for the scald damage was found on the 7H chromosome (chr7H at 581517810: Fig. 3F).
 This SNP had a positive sign of neighbor effect coefficient ($\beta_2$ = 3.24, MAF = 0.098, raw $p$-value = 4.19e-06, Bonferroni-corrected $p$-value = 0.086) and thus indicated positive allelic interactions at this locus to prevent the disease spread among neighboring plots.
-These findings suggest the potential existence of QTLs responsible for positive genotype-genotype interactions that mitigate disease spreads.  
-
-To examine whether neighbor genotypic effects shared the same QTLs with plant's own genotypic effects, we also conducted standard GWAS and compared it with Neighbor GWAS.
-This standard GWAS did not find any significant SNPs for the three diseases ($p$ > 0.1 after Bonferroni correction) but found suggestive peaks.
-_Such weak peaks were found for the damage by the net form and spot form net blotch and located on x chromosomes. (Fig. 3A and C)_.
-Combined with the Neighbor GWAS results, these findings suggest that plant' own and neighbor genotypic effects on disease infection may have different genetic bases.  
+These findings suggest the potential existence of QTLs responsible for positive genotype-genotype interactions that mitigate disease spreads through long-range neighbor effects.
+We also conducted standard GWAS but did not find any significant SNPs for the present data on the three diseases ($p$ > 0.1 after Bonferroni correction: Fig. 3A-C).  
 
 # Discussion
 Our quantitative genetic analyses revealed that substantial fractions of spatial heterogeneity was attributable to neighbor genotypes in barley diseases.
@@ -172,14 +157,14 @@ In this context, our Neighbor GWAS analysis detected a significant SNP associate
 This is the first report for Neighbor GWAS to detect a significant QTL and, to our knowledge, one of few reports on significant QTLs associated with neighbor genotypic effects on agriculturally important traits [@montazeaud_cultivar_2022].  
 
 ## Genetic architecture of neighbor effects
-Through marker-trait associations, GWAS can provide correlative evidence for candidate genes near significant SNPs. 
+Through marker-trait associations, GWAS can provide correlative evidence for candidate genes near significant SNPs [@korte_advantages_2013; @tibbs_cortes_status_2021]. 
 On the tip of the chromosome 7H, we specifically found a significant SNP at 610368438 for the net form net blotch; and a marginally significant SNP at 581517810 for scald. 
 Within 30-kb near the 610368438 position, we did find the two loci HORVU.MOREX.r3.7HG0742860 and HORVU.MOREX.r3.7HG0742870 which encoded protein kinases.
 Another SNP at 581517810 was located within 30 kb near the loci HORVU.MOREX.r3.7HG0731740, HORVU.MOREX.r3.7HG0731730, and HORVU.MOREX.r3.7HG0731700 which encoded a SCO1-like protein, lipid transfer protein, and transducin/WD40 repeat protein, respectively.
-Among them, protein kinases and WD40 repeat proteins are known to involve barley resistance to abiotic and biotic stresses (**cites**).
+Among them, protein kinases and WD40 repeat proteins are known to involve various abiotic and biotic resistance in barley or wheat (**cites**).
 Although such gene functions need to be validated, these candidate genes add functional inference to the long-distance neighbor genotypic effects on disease infection.  
 
-Besides candidate genes, previous studies reported several net blotch-related QTLs were reported for the tip of the chromosome 7H (Tamang et al. 2015; Richard et al. 2017; Novakazi et al. 2019; Clare et al. 2019) near 581517810 and 610368438 bp positions.
+Besides candidate genes, previous studies reported several disease-associated QTLs for the tip of the chromosome 7H (Tamang et al. 2015; Richard et al. 2017; Novakazi et al. 2019; Clare et al. 2019) around the 581517810 and 610368438 bp positions.
 While our normal GWAS did not find any significant SNPs on previously reported QTLs, those overlapped QTLs suggest their dual roles in plants' own and neighbor genotypic effects on disease resistance.
 For example, Tamang et al. (2015) performed GWAS using 2062 barley accessions and identified a novel QTL associated with the damage by the New Zealand strain, NZKF2, of the spot form net blotch.
 This QTL region ranged from 601275881 to 615403763 at the chromosome 7H (Tamang et al. 2015), including the SNP position of 610368438 for which we found long-range neighbor genotypic effects on the net form net blotch.
@@ -202,27 +187,37 @@ Meanwhile, we should note that open data may not be always complete.
 For instance, detailed metadata, such physical distance between individual plots or plants, were not found in the barley open data.
 This shortage of basic information could have made the interpretation of Neighbor GWAS difficult.
 To solve this issue, pattern-based analyses, such as P-splines in SpATS, was used as a complementary tool to determine the upper limit of spatial heterogeneity in observed phenotypes.
+**mention polynomials in Neighbor GWAS**
 A joint use of pattern-based and process-based modeling would be effective for overcoming potential limitations regarding data availability.  
 
 ## Conclusion 
-Harnessing open data, we found significant phenotypic variation and genetic variant associated with neighbor genotypic effects on disease infection in barley.
-Neighbor genotypic effects are linked to genotype mixtures [@sato_reducing_2024], providing one of promising ways for integrated pest management [@tooker_genotypically_2012].
-Unlike a previous study on polygenic traits [@sato_reducing_2024], the identification of significant QTLs may enable us to optimize population-level pest damage with a few loci focused [@wuest_ecological_2021; @sato_genetics_2024].
+Harnessing open data, we detected significant phenotypic variation and genetic variant associated with neighbor genotypic effects on disease infection in barley.
+Such neighbor genotypic effects are linked to the effects of genotype mixtures on pest damage [@sato_reducing_2024], providing a promising way for integrated pest managements by mixed planting [@mundt_use_2002; @tooker_genotypically_2012].
+Unlike a previous study on polygenic traits [@sato_reducing_2024], the identification of significant QTLs may enable us to optimize population-level pest damage with a few loci being targeted [@wuest_ecological_2021; @sato_genetics_2024].
 For barley cultivars, we indeed detected a significant SNP that had positive effects of allelic mixture on damage, indicating a potential prevention of disease spread by allelic mixtures.
-Beyond genotype mixture, allelic mixture is particularly suitable for crop varieties because intraspecific varieties can be subjected to breeding by crossing each other [@montazeaud_cultivar_2022].
+Beyond genotype mixture, allelic mixture is particularly suitable for crop varieties because intraspecific varieties can be subjected to breeding by crossing each other.
 Further studies are needed to validate these effects by comparing allelic monoculture and mixture at the candidate locus.  
 
-# Author contributions
-IA: investigation, formal analysis, funding acquisition, writing; RSI: supervision, funding acquisition, writing; YS: methodology, investigation, data curation, formal analysis, supervision, funding acquisition, writing
+# Data availability
+All the source code and input data are available at GitHub (<https://github.com/yassato/caige_barley>) and Figshare (<https://doi.org/yyyy>).
+The full list of SNP positions and -log~10~(_p_) association scores is also available in these GitHub and Figshare repository as a binary format of R language.
+Supplementary Figure S1 presents QQ plots for GWAS.
+Supplementary Table S1 shows the list of exact URLs for the original input data.
+Supplementary Table S2 and S3 include the exact $p$-values for the likelihood ratio tests shown in Figure 2.
+These supplementary figures and tables are available through Figshare at https://doi.org/xxxxxx.
 
-# Acknowledgement
-The authors appreciate all efforts made by the data collectors of the CAIGE project. Thanks are also given to Lukas Rohr, a former master student at the University of Zurich, for pilot analyses during the initial stage. This study was supported by the Japan Science and Technology Agency (JST) FOREST program (grant no. JPMJFR233L to YS); Swiss National Science Foundation (SNSF) Spark program (CRSK-3_221418 to YS); and JST SPRING program (JPMJSP2119 to IA). The authors declare that there is no conflict of interest in this study.
+# Acknowledgements
+The authors appreciate all efforts made by the data collectors of the CAIGE project. Thanks are also given to Lukas Rohr, a former master student at the University of Zurich, for pilot analyses during the initial stage. 
 
+# Funding
+This study was supported by the Japan Science and Technology Agency (JST) FOREST program (grant no. JPMJFR233L to YS); Swiss National Science Foundation (SNSF) Spark program (CRSK-3_221418 to YS); and JST SPRING program (JPMJSP2119 to IA through Hokkaido University's EXEX fellowships). The authors declare that there is no conflict of interest in this study.
+
+# Conflicts of interest
+The authors declare no conflicts of interest.
 
 # Figures
 
-
-![Figure 1. SpATS for visualization of spatial heterogeneity- X-axis represents row displacement; Y-axis represents column displacement and Z-axis represents residual displacement of disease severity. The color gradient reflects disease severity/damage level where blue indicates low, green indicates moderate and yellow indicates high severity.](../figures/SpATS_draft.png)
+![Figure 1. Sample variograms for visualization of spatial heterogeneity for the net form net blotch (A), spot form net blotch (B), and scald (C). X-axis represents the row displacement; Y-axis represents the column displacement and Z-axis represents residual displacement of disease severity between a pair of spatial positions [see @gilmour_accounting_1997]. The color gradient reflects disease severity levels where the blue indicates low, green indicates moderate, and yellow indicates high severity.](../figures/Spats_fig.pdf)
 
 ![Figure 2. Proportion of phenotypic variation explained (PVE) by plant's own (self) and neighbor (neighbor) genotypic effects on on the three phenotypes of disease infections: (A) net form net blotch, (B) spot form net blotch, and (C) scald. PVE at the distance of zero corresponds to a coventional SNP heritability (blue). Additional fractions explained by neighbor genotypic identity (red) indicate a net contribution of neighbor genotypic effects  and are shown across the distances $\neq$ 0. Asterisks indicate \* $p<0.05$; \** $p<0.01$ with likelihood ratio test (see Table S2 for exact $p$-values).](../figures/PVE_fig.pdf) 
 
@@ -232,7 +227,7 @@ The authors appreciate all efforts made by the data collectors of the CAIGE proj
 
 # Tables
 
-Table 1. Summary of data availability 
+Table 1. Summary of curated data from the CAIGE barley disease trials 
 
 | **Phenotype** | **#Plants$^\dagger$** | **#Genotypes$^\dagger$** | **\%Missing** | **#SNPs (MAF=1%)** | **#SNPs (MAF=5%)** |
 | ---- | ---- | ---- | ---- | ---- | ---- |
@@ -241,6 +236,17 @@ Table 1. Summary of data availability
 | Scald | 509 | 482 | 25 | 20527 | 14580 |  
 
 $\dagger$Shown are the number after individuals whose genotype are unavailable (i.e., \%Missing) are excluded.
+
+Table 2. SpATS results for variance components among genotypes and 2D-spatial positions (range and rows). Estimated variance is shown for each random factor and phenotype. f(Range,Row)\|Range or Row indicates a smoothing factor for the range and row positions.
+
+| Factor              | Net form net blotch | Spot form net blotch | Scald |
+|---------------------|---------------------|----------------------|-------|
+| Genotype            | 1.92                | 0.82                 | 2.10  |
+| Row                 | 0.02                | 0.04                 | 0.02  |
+| Range               | 0.02                | 0.02                 | 0.06  |
+| f(Range,Row)\|Range | 0.10                | 0.02                 | 4.05  |
+| f(Range,Row)\|Row   | 0.82                | 0.00                 | 2.27  |
+| _Residual_          | 0.52                | 0.37                 | 1.11  |
 
 # Supplementary Materials
 
@@ -344,7 +350,4 @@ Table S3. The proportion of phenotypic variation explained (PVE) by plant's own 
 | 4.25         | 0.511         | 0.193             | 7.883    | 0.0050    |
   
 
-- Table S4. List of top-hit SNPs at each spatial scale
-
-
-# References
+# Literature cited
