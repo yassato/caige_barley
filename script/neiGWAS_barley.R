@@ -66,7 +66,7 @@ total = res$PVEself+res$PVEnei
 res = data.frame(res,total)
 
 delta_PVE(res)
-# write.csv(res,"./output/PVE_Scald_MAF5.csv")
+write.csv(res,"./output/PVE_NFNB_MAF1.csv")
 
 #pooled experiment GWAS:
 #NFNB (1,6,10): distance best at 2, delta_PVE chose 1
@@ -92,7 +92,7 @@ for(i in distances) {
 }
 
 # save results
-saveRDS(gwas,"./output/Scald_GWAS.rds")
+saveRDS(gwas,"./output/NFNB_GWAS.rds")
 
 # incl. cov by sommer
 library(sommer)
