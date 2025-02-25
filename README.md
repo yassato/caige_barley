@@ -12,6 +12,9 @@ phenotype data files
 - script  
 scripts to prepare input files and perform statistical analyses
 
+- output  
+any intermediate files and the full list of GWAS association scores (NAME_OF_PHENOTYPE_GWAS.rds).
+
 ## Data
 
 ### Phenotype 

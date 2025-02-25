@@ -42,7 +42,7 @@ In this study, we investigated spatial heterogeneity of disease infection, such 
 ## Dataset
 Barley phenotype and genotype data were obtained from the website of CIMMYT Australia ICARDA Germplasm Evaluation (CAIGE) project (<https://www.caigeproject.org.au/>; see Table S1 for exact URLs).
 More specifically, DArT-derived SNP data for 807 lines were downloaded from the Gigwa database.
-Genotype data were imputed using BEAGLE3 [@ayres_beagle_2019] after the exclusion of duplicated markers.
+Genotype data were imputed using BEAGLE version 5.1 [@browning_one-penny_2018] after the exclusion of duplicated markers.
 The phenotype data were downloaded from the disease screening webpage.
 Datasets were curated with the following three criteria: (1) spatial information (i.e., rows and ranges of field plots) is available; (2) phenotypes are recorded for multiple years; (3) more than 500 individuals are available for statistical analysis. 
 As a result, we were able to retrieve three-year data on three phenotypes, i.e., spot form net blotch, net form net blotch, and scald symptoms recorded at Horsham, Australia.
