@@ -8,7 +8,7 @@ bibliography: zotero.bib
 csl: g3.csl
 ---
 
-**Iqra Akram**^1^, **Rie Shimizu-Inatsugi**^2^, \& **Yasuhiro Sato**^1,2,3\*^    
+**Iqra Akram**^1^, **Lukas Rohr**^2^, **Rie Shimizu-Inatsugi**^2^, \& **Yasuhiro Sato**^1,2,3\*^    
 
 ^1^Graduate School of Environmental Science, Hokkaido University, N10W5 Kita-ku, Sapporo 060-0810, Hokkaido, Japan  
 ^2^Department of Evolutionary Biology and Environmental Studies, University of Zurich
@@ -151,7 +151,7 @@ All the source code and input data are available at GitHub (<https://github.com/
 Supplementary Tables S2 and S3 include the exact $p$-values for the likelihood ratio tests of PVE. These supplementary figures and tables are available through Figshare at https://doi.org/xxxxxx.
 
 # Acknowledgements
-The authors appreciate all efforts made by the data collectors of the CAIGE project. Thanks are also given to Lukas Rohr, a former master student at the University of Zurich, for pilot analyses during the initial stage. 
+The authors appreciate all efforts made by the data collectors of the CAIGE project. We especially thank Richard Trethowan and Amit Singh for their response to our inquiry.  
 
 # Funding
 This study was supported by the Japan Science and Technology Agency (JST) FOREST program (grant no. JPMJFR233L to YS); Swiss National Science Foundation (SNSF) Spark program (CRSK-3_221418 to YS); and JST SPRING program (JPMJSP2119 to IA through Hokkaido University EXEX fellowships). The authors declare that there is no conflict of interest in this study.
