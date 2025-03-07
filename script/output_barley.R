@@ -3,10 +3,10 @@ library(patchwork)
 source("./script/coord.R")
 
 ##################################
-# manhattan plot with line, QQ-plot
+# Manhattan plot with line, QQ-plot
 
 # load GWAS results
-trait = "NFNB"
+trait = "NFNB" # select the trait name: NFNB, SNFB, or Scald
 prfx = paste0(trait,"_GWAS")
 dir = "./output/"
 dirfn = paste0(dir,prfx,".rds")
@@ -62,7 +62,7 @@ th_maf1
 th_maf5
 
 #################
-# PVE bar plot
+# PVE bar plot: CSV outputs are created by "neiGWAS_barley.R"
 out = read.csv(paste0(dir,"PVE_",trait,"_MAF1.csv"))
 bar = ggplot(data=out,aes(x=scale,y=total)) + geom_col() + theme_classic() +
   geom_text(data.frame(x=out$scale[out$p_val<0.01],y=out$total[out$p_val<0.01]),mapping=aes(x=x,y=y),label="**",size=6) +

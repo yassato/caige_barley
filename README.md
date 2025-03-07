@@ -20,31 +20,31 @@ _Note that the raw genotype data can be downloaded as follows._
 1. Access to the CAIGE site https://www.caigeproject.org.au/germplasm-evaluation-barley-genotypic-data/
 1. Access to Gigwa in the line of SNP Markers dataset (807 CAIGE Barley Lines) "Download Gigwa Link"
 1. Push "search" and check "Enable browse and export"
-1. Press download button and download in a VCF file 
+1. Press a download button and download in a VCF file 
 
 ## pheno  
-_Original phenotype files downdloaded from http://www.caigeproject.org.au/germplasm-evaluation/barley/disease-screening/disease-screening-2016/_
+_Original phenotype files downloaded from http://www.caigeproject.org.au/germplasm-evaluation/barley/disease-screening/disease-screening-2016/_
 
 - 2015_NFNB_Results_with_controls.csv
 - 2015_PM_Results_with_controls.csv
 - 2015_SFNB_Results_with_controls.csv
 - 2015_Scald_Results_with_controls.csv    
-Work sheets from "2015_caigebarleydisease_14shipment_dedjtr_pm_sfnb_nfnb.xlsx"  
+Worksheets from "2015_caigebarleydisease_14shipment_dedjtr_pm_sfnb_nfnb.xlsx"  
 
 - 2016_BLR_field.csv
 - 2016_NFNB_Field.csv
 - 2016_SFNB_Field.csv
 - 2016_Scald_field.csv  
-Work sheets from "2016_caigebarleydisease_15shipment_dedjtr_sfnb_nfnb.xlsx"  
+Worksheets from "2016_caigebarleydisease_15shipment_dedjtr_sfnb_nfnb.xlsx"  
 
 - 2017_Blr_without_controls.csv
 - 2017_NFNB_with_controls.csv
 - 2017_SFNB_with_controls.csv
 - 2017_Scald_with_controls.csv  
-Work sheets from "2017_caigebarleydisease_16shipment_dedjtr_sfnb_nfnb.xlsx"  
+Worksheets from "2017_caigebarleydisease_16shipment_dedjtr_sfnb_nfnb.xlsx"  
 
 - geno2pheno.csv
-A reference file linking genetype names and IDs. The original comes from "Data_summary" sheet of "CAIGE-Barley-Disease-compilation-data_LZ.xlsx".  
+A reference file linking genotype names and IDs. The original comes from "Data_summary" sheet of "CAIGE-Barley-Disease-compilation-data_LZ.xlsx".  
 
 
 ## script  
@@ -54,7 +54,7 @@ _R and bash scripts to prepare inputs, perform statistical analysis and make fig
 R script to curate genotype data whose outputs went to ```./geno``` above
 
 - CAIGE_barley_pheno.R  
-R script to combine multi-year phenotype data whose outputs went to ```./merge``` above
+R script to combine multi-year phenotype data whose outputs go to ```./output``` below
 
 - Spats_NFNB.R
 - Spats_SFNB.R
@@ -62,7 +62,7 @@ R script to combine multi-year phenotype data whose outputs went to ```./merge``
 R scripts for the SpATS analysis of the net form net blotch (NFNB), spot form net blotch (SFNB), and Scald.
 
 - coord.R  
-An utility R function to depict GWAS Manhattan plots
+A utility R function to depict GWAS Manhattan plots
 
 - neiGWAS_barley.R  
 R script to conduct the PVE analysis and GWAS of neighbor genotypic effects. GWAS outputs are available in ```./output``` below.

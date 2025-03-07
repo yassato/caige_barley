@@ -27,7 +27,6 @@ for(i in 1:12){
     pheno_i = select(pheno_i, c(1,2,3,4,5,6,7,ncol(pheno_i)))
   }
   pheno_i = mutate(pheno_i, Experiment_Number = i)
-  # pheno_i = mutate(pheno_i, Damage_Level = scale(Damage_Level)[,1])
   if(i==1){
     pheno_all = pheno_i
   }
