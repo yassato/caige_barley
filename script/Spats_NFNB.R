@@ -1,5 +1,5 @@
 library(SpATS)
-barley <- read.csv("./pheno/NFNB_merged.csv")
+barley <- read.csv("./output/NFNB_merged.csv")
 barley$R <- as.factor(barley$Row)
 barley$C <- as.factor(barley$Range)
 barley$Bay = as.numeric(factor(barley$Bay))

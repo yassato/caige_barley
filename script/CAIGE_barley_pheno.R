@@ -38,5 +38,5 @@ for(i in 1:12){
 
 #select phenotype pool
 pheno = filter(pheno_all, Experiment_Number %in% pool)
-write.csv(pheno,"./pheno/Scald_merged.csv")
+write.csv(pheno,"./output/Scald_merged.csv")
 

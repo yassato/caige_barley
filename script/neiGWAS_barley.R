@@ -2,7 +2,7 @@ library(rNeighborGWAS)
 library(tidyverse)
 
 # load phenotype data
-pheno = read.csv("./pheno/NFNB_merged.csv")
+pheno = read.csv("./output/NFNB_merged.csv")
 pheno$Experiment_Number = as.factor(pheno$Experiment_Number)
 print(nrow(pheno))
 

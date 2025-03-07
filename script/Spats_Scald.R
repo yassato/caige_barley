@@ -1,5 +1,5 @@
 library(SpATS)
-barleyscald <-read.csv("./pheno/Scald_merged.csv")
+barleyscald <-read.csv("./output/Scald_merged.csv")
 barleyscald$R <- as.factor(barleyscald$Row)
 barleyscald$C <- as.factor(barleyscald$Range)
 barleyscald$Bay = as.numeric(factor(barleyscald$Bay))
