@@ -108,9 +108,39 @@ bar3 = ggplot(data=res3,aes(x=dist,y=PVE,fill=type)) + geom_bar(stat="identity")
   ylab("PVE") + xlab("Euclidian distance from focal plants") + 
   ylim(NA,1) + theme(legend.position="none") #+ labs(subtitle="Scald")
 
-bar = (bar1 | bar2 | bar3) #+ plot_annotation(tag_levels = "A")
-ggsave(bar,filename="./figures/PVE_all.pdf",height=3,width=10)
+neip = ggplot(data=NULL,aes(x=rep(1:7,10),y=rep(1:7,each=10))) + geom_point() + 
+  ylab("Row") + xlab("Range") + theme_bw()
+
+bar = (neip | bar1) / (bar2 | bar3) #+ plot_annotation(tag_levels = "A")
+ggsave(bar,filename="../figs/PVE_all.pdf",height=6,width=6)
 
 
+pdf("../figs/barley_plot.pdf",width=9,height=9)
+par(mfcol=c(3,3))
+barley_nfnb <- read.csv("./output/NFNB_merged.csv")
+for(i in as.numeric(levels(factor(barley_nfnb$Experiment_Number)))) {
+  plot(barley_nfnb[barley_nfnb$Experiment_Number==i,"Row"],
+       barley_nfnb[barley_nfnb$Experiment_Number==i,"Range"],
+       xlim=c(min(barley_nfnb$Row),max(barley_nfnb$Row)),
+       ylim=c(min(barley_nfnb$Range),max(barley_nfnb$Range)),
+       las=1,ylab="Range",xlab="Row",col=grey(0.5,0.5))
+}
 
+barley_sfnb <- read.csv("./output/SFNB_merged.csv")
+for(i in as.numeric(levels(factor(barley_sfnb$Experiment_Number)))) {
+  plot(barley_sfnb[barley_sfnb$Experiment_Number==i,"Row"],
+       barley_sfnb[barley_sfnb$Experiment_Number==i,"Range"],
+       xlim=c(min(barley_sfnb$Row),max(barley_sfnb$Row)),
+       ylim=c(min(barley_sfnb$Range),max(barley_sfnb$Range)),
+       las=1,ylab="Range",xlab="Row",col=grey(0.5,0.5))
+}
 
+barley_scald <- read.csv("./output/Scald_merged.csv")
+for(i in as.numeric(levels(factor(barley_scald$Experiment_Number)))) {
+  plot(barley_scald[barley_scald$Experiment_Number==i,"Row"],
+       barley_scald[barley_scald$Experiment_Number==i,"Range"],
+       xlim=c(min(barley_scald$Row),max(barley_scald$Row)),
+       ylim=c(min(barley_scald$Range),max(barley_scald$Range)),
+       las=1,ylab="Range",xlab="Row",col=grey(0.5,0.5))
+}
+dev.off()

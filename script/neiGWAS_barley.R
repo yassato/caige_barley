@@ -50,7 +50,6 @@ gmap = read.csv("./geno/positions.csv.gz")
 gmap = filter(gmap,!rare_allele)
 gmap = data.frame(gmap,MAF)
 
-
 # choose effect distance
 distances = c(1,sqrt(2)+0.01,2,sqrt(8)+0.01,3,4,sqrt(18)+0.01) 
 covar = model.matrix(~Experiment_Number+poly(Row,4)+poly(Range,4),data=pheno)[,-1]
