@@ -114,7 +114,8 @@ neip = ggplot(data=NULL,aes(x=rep(1:7,10),y=rep(1:7,each=10))) + geom_point() +
 bar = (neip | bar1) / (bar2 | bar3) #+ plot_annotation(tag_levels = "A")
 ggsave(bar,filename="../figs/PVE_all.pdf",height=6,width=6)
 
-
+####################
+# Supp figure: Raw data point along the ranges and rows
 pdf("../figs/barley_plot.pdf",width=9,height=9)
 par(mfcol=c(3,3))
 barley_nfnb <- read.csv("./output/NFNB_merged.csv")
@@ -123,7 +124,7 @@ for(i in as.numeric(levels(factor(barley_nfnb$Experiment_Number)))) {
        barley_nfnb[barley_nfnb$Experiment_Number==i,"Range"],
        xlim=c(min(barley_nfnb$Row),max(barley_nfnb$Row)),
        ylim=c(min(barley_nfnb$Range),max(barley_nfnb$Range)),
-       las=1,ylab="Range",xlab="Row",col=grey(0.5,0.5))
+       las=1,ylab="Range",xlab="Row",col=grey(0.5,0.5),pch=1,cex=0.5)
 }
 
 barley_sfnb <- read.csv("./output/SFNB_merged.csv")
@@ -132,7 +133,7 @@ for(i in as.numeric(levels(factor(barley_sfnb$Experiment_Number)))) {
        barley_sfnb[barley_sfnb$Experiment_Number==i,"Range"],
        xlim=c(min(barley_sfnb$Row),max(barley_sfnb$Row)),
        ylim=c(min(barley_sfnb$Range),max(barley_sfnb$Range)),
-       las=1,ylab="Range",xlab="Row",col=grey(0.5,0.5))
+       las=1,ylab="Range",xlab="Row",col=grey(0.5,0.5),pch=1,cex=0.5)
 }
 
 barley_scald <- read.csv("./output/Scald_merged.csv")
@@ -141,6 +142,6 @@ for(i in as.numeric(levels(factor(barley_scald$Experiment_Number)))) {
        barley_scald[barley_scald$Experiment_Number==i,"Range"],
        xlim=c(min(barley_scald$Row),max(barley_scald$Row)),
        ylim=c(min(barley_scald$Range),max(barley_scald$Range)),
-       las=1,ylab="Range",xlab="Row",col=grey(0.5,0.5))
+       las=1,ylab="Range",xlab="Row",col=grey(0.5,0.5),pch=1,cex=0.5)
 }
 dev.off()
