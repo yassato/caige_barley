@@ -51,14 +51,14 @@ gmap = filter(gmap,!rare_allele)
 gmap = data.frame(gmap,MAF)
 
 # choose effect distance
-distances = c(1,sqrt(2)+0.01,2,sqrt(8)+0.01,3,4,sqrt(18)+0.01) 
+distances = distances = c(1,sqrt(2)+0.01,2,sqrt(5)+0.01,sqrt(8)+0.01,3,sqrt(10)+0.01,sqrt(13)+0.01,4,sqrt(17)+0.01,sqrt(18)+0.01) #distances up to sqrt(18) = 3*sqrt(2) = 4.2426...
 covar = model.matrix(~Experiment_Number+poly(Row,4)+poly(Range,4),data=pheno)[,-1]
 res = calc_PVEnei(geno=geno,pheno=pheno$Damage_Level,smap=smap,scale_seq=distances,addcovar=covar,grouping=pheno$Experiment_Number,response="quantitative")
 total = res$PVEself+res$PVEnei
 res = data.frame(res,total)
 
 delta_PVE(res)
-write.csv(res,file=paste0("./output/PVE_",trait,"NFNB_MAF1.csv")) 
+write.csv(res,file=paste0("./output/PVE_",trait,"_MAF1.csv")) 
 
 #set scale for neiGWAS
 gwas = c()
