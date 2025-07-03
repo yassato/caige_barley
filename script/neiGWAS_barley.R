@@ -26,14 +26,14 @@ print(nrow(pheno))
 print(length(table(pheno$Name)))
 
 
-#prepare geno, filter minor alleles
-#maf_filter is set in settings at top of script
-maf_filter = 0.01
+# prepare geno, filter minor alleles
+# maf_filter is set in settings at top of script
+maf_filter = 0.05
 af = rowSums(geno)/(2*ncol(geno)) #assuming geno is completed; raw data ~ 0,1,2, so 2* for ncol()
 rare_allele = ifelse(af<maf_filter|1-af<maf_filter,TRUE,FALSE)
 geno = filter(geno,!rare_allele)
 
-# calc and filter MAF
+# calc. and filter MAF
 MAF = af
 MAF[MAF>0.5] = 1 - MAF[MAF>0.5]
 MAF = MAF[!rare_allele]
@@ -42,25 +42,35 @@ MAF = MAF[!rare_allele]
 geno = t(geno)
 geno = geno - 1
 
-#smap: spatial map
+# smap: spatial map
 smap = cbind(pheno$Range,pheno$Row)
 
-#gmap: genetic map
+# gmap: genetic map
 gmap = read.csv("./geno/positions.csv.gz")
 gmap = filter(gmap,!rare_allele)
 gmap = data.frame(gmap,MAF)
 
+# determine polynomials
+# results are available as a supp fig
+LL = c()
+for(i in 1:6) {
+  covar = model.matrix(~Experiment_Number+poly(Row,i)+poly(Range,i),data=pheno)[,-1]
+  LL = c(LL,logLik(lm(pheno$Damage_Level~covar)))
+}
+wh = which(pchisq(2*(LL[2:6] - LL[1:5]),2,lower.tail=FALSE)<0.05)
+deg = wh[length(wh)]+1
+
 # choose effect distance
 distances = distances = c(1,sqrt(2)+0.01,2,sqrt(5)+0.01,sqrt(8)+0.01,3,sqrt(10)+0.01,sqrt(13)+0.01,4,sqrt(17)+0.01,sqrt(18)+0.01) #distances up to sqrt(18) = 3*sqrt(2) = 4.2426...
-covar = model.matrix(~Experiment_Number+poly(Row,4)+poly(Range,4),data=pheno)[,-1]
+covar = model.matrix(~Experiment_Number+poly(Row,deg)+poly(Range,deg),data=pheno)[,-1]
 res = calc_PVEnei(geno=geno,pheno=pheno$Damage_Level,smap=smap,scale_seq=distances,addcovar=covar,grouping=pheno$Experiment_Number,response="quantitative")
 total = res$PVEself+res$PVEnei
 res = data.frame(res,total)
 
 delta_PVE(res)
-write.csv(res,file=paste0("./output/PVE_",trait,"_MAF1.csv")) 
+write.csv(res,file=paste0("./output/PVE_",trait,"_MAF5.csv")) 
 
-#set scale for neiGWAS
+# set scale for neiGWAS
 gwas = c()
 for(i in distances) {
   scale <- i

@@ -18,4 +18,6 @@ summary(barleyscald_results, which = "all")
 plot(barleyscald_results)
 var.barleyscald_results <- variogram(barleyscald_results)
 plot(var.barleyscald_results)
-getHeritability(barleyscald_results)##0.65
+qqnorm(barleyscald_results$residuals,las=1,main="(C) Scald")
+qqline(barleyscald_results$residuals)
+getHeritability(barleyscald_results) ## Name 0.65

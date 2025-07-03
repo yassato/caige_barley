@@ -15,8 +15,9 @@ summary(barley_results, which = "all")
 plot(barley_results)
 var.barley_results <- variogram(barley_results)
 plot(var.barley_results)
-getHeritability(barley_results) ##Name 0.78
-
+qqnorm(barley_results$residuals,las=1,main="(A) Net form net blotch")
+qqline(barley_results$residuals)
+getHeritability(barley_results) ## Name 0.78
 
 
 

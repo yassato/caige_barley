@@ -54,7 +54,7 @@ _R and bash scripts to prepare inputs, perform statistical analysis and make fig
 R script to curate genotype data whose outputs went to ```./geno``` above
 
 - CAIGE_barley_pheno.R  
-R script to combine multi-year phenotype data whose outputs go to ```./output``` below
+R script to combine multi-year phenotype data whose outputs went to ```./output``` below
 
 - Spats_NFNB.R
 - Spats_SFNB.R
@@ -68,11 +68,13 @@ A utility R function to depict GWAS Manhattan plots
 R script to conduct the PVE analysis and GWAS of neighbor genotypic effects. GWAS outputs are available in ```./output``` below.
 
 - output_barley.R  
-
+R script to make figures and tables.  
 
 - runBEAGLE.sh  
 Shell script to run BEAGLE for the genotype imputation, generating "caigebarley__53355variants__807individuals_imp.vcf.gz" in ```./geno``` above.
 
+- Ising2Dexample.R  
+R script to perform spatial simulations based on the Ising model.  
 
 ## output  
 _A subdirectory to save intermediate and output files_
